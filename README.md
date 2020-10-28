@@ -38,4 +38,9 @@ Semester project in the module "Programming for IOS"
     <br />
     App that lets the user invite other people to a specific occasion and tell them what to bring. People can then accept or decline the invitation and choose what they want to contribute to the occasion
   </li>
+    <li>
+    <b>Recipie Platform</b>
+    <br />
+    Save your favourtite recipies dynamically (per person calc). Share them online. Browse online. (self hosted)
+  </li>
 </ul>
