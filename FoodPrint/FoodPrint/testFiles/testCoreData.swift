@@ -2,7 +2,7 @@
 //  testCoreData.swift
 //  FoodPrint
 //
-//  Created by nicock on 29.10.20.
+//  Created by nico on 29.10.20.
 //
 
 import Foundation
@@ -55,7 +55,7 @@ class testCoreData {
     }
     
     // Function to update User-Object
-    func updateUser(language: String, rating: Int16, preferences: String) {
+    func updateUser(language: String, rating: Int16, preferences: [String]) {
         self.user?.language = language
         self.user?.rating = rating
         self.user?.preferences = preferences

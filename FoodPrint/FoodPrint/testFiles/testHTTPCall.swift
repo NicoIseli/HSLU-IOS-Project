@@ -2,7 +2,7 @@
 //  testHTTPCall.swift
 //  FoodPrint
 //
-//  Created by nicock on 29.10.20.
+//  Created by nico on 29.10.20.
 //
 
 import Foundation
