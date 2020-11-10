@@ -6,3 +6,4 @@ App that tells the user how regional and seasonal certain products are. The goal
 * SaisonKalender Schweizer Bauern: https://www.landwirtschaft.ch/saisonkalender/
 * SaisonKalender Schweiz: https://www.gemuese.ch/Saisonkalender
 * SaisonKalender Schweizer Milch: https://www.swissmilk.ch/de/rezepte-kochideen/saisonkalender/
+* SaisonKalender: https://api.swissmilk.ch/wp-content/uploads/2020/06/DE_SM_Saisonkalender2020_Final01.pdf
