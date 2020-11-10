@@ -1,0 +1,232 @@
+{
+  {
+    "title" : "Aubergine",
+    "category" : "Gemüse",
+    "month" : [6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Blumenkohl",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Bodenkohlrabi",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Bohnen",
+    "category" : "Gemüse",
+    "month" : [6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Broccoli",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Bundrüebli",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Bundzwiebel",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Erbse",
+    "category" : "Gemüse",
+    "month" : [6, 7]
+  },
+  {
+    "title" : "Favebohnen",
+    "category" : "Gemüse",
+    "month" : [6, 7]
+  },
+  {
+    "title" : "Federkohl",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Fenchel",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Gemüsezwiebel",
+    "category" : "Gemüse",
+    "month" : [8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Gurke",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Herbstrübe",
+    "category" : "Gemüse",
+    "month" : [9, 10, 11, 12]
+  },
+  {
+    "title" : "Hefe",
+    "category" : "Gemüse",
+    "month" : [6, 7, 8, 9]
+  },
+  {
+    "title" : "Knollensellerie",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Kohlrabi",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Krautstiel",
+    "category" : "Gemüse",
+    "month" : [3, 4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Kürbis",
+    "category" : "Gemüse",
+    "month" : [1, 2, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Lauch",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Mairübe",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6]
+  },
+  {
+    "title" : "Pastinake",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Patisson",
+    "category" : "Gemüse",
+    "month" : [6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Peperoni",
+    "category" : "Gemüse",
+    "month" : [6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Radieschen",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Randen",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Rettich",
+    "category" : "Gemüse",
+    "month" : [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Rhabarber",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6]
+  },
+  {
+    "title" : "Romanesco",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Rondini",
+    "category" : "Gemüse",
+    "month" : [6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Rosenkohl",
+    "category" : "Gemüse",
+    "month" : [1, 2, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Rotkraut",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Rüebli",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Schnittmangold",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9]
+  },
+  {
+    "title" : "Schwarzwurzeln",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 10, 11, 12]
+  },
+  {
+    "title" : "Spargeln grün & weiss",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6]
+  },
+  {
+    "title" : "Spinat",
+    "category" : "Gemüse",
+    "month" : [3, 4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Spitzkabis",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7]
+  },
+  {
+    "title" : "Stangensellerie",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Tomate",
+    "category" : "Gemüse",
+    "month" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "title" : "Topinambur",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 11, 12]
+  },
+  {
+    "title" : "Weisskabis",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Wirz",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "title" : "Zucchetti",
+    "category" : "Gemüse",
+    "month" : [5, 6, 7, 8, 9, 10]
+  },
+  {
+    "title" : "Zuckermais",
+    "category" : "Gemüse",
+    "month" : [8, 9, 10, 11]
+  },
+  {
+    "title" : "Zwiebel",
+    "category" : "Gemüse",
+    "month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+}
