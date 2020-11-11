@@ -1,4 +1,4 @@
-{
+[
   {
     "name" : "Aubergine",
     "category" : "Gemüse",
@@ -804,4 +804,4 @@
     "category" : "Pilze",
     "seasonalMonths" : [10, 11, 12]
   }
-}
+]
