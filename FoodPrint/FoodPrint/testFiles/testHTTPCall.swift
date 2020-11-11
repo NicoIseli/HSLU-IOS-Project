@@ -10,10 +10,6 @@ import Foundation
 
     // MARK: - URL's
     let urlProductList = URL(string: "https://")!
-    let urlLabels = URL(string: "https://")!
-
-
-
 
 
     // MARK: - Data Structures for fetching data
@@ -25,14 +21,9 @@ import Foundation
 
     struct Product: Codable {
         let name: String
-        let description : String
-        let season: String
-        let lables: [String]
-    }
-
-    // Struct containing information for the label
-    struct Label: Codable{
-        let labels: [String]
+        let category : String
+        let country: String
+        let months: [Int]
     }
 
 
@@ -61,28 +52,7 @@ import Foundation
         return products
     }
 
-    // Function to get Labels
-    func fetchLabels() -> [String] {
-        
-        var products: [String] = []
-        
-        do{
-            let encodedData = try Data(contentsOf: urlLabels)
-            
-            let decodedData = try JSONDecoder().decode(Label.self, from: encodedData)
-            
-            products = decodedData.labels
-            
-        } catch {
-            print("error")
-        }
-        
-        return products
-    }
-    
-    
-    
-    
+
     
     // MARK: - Functions to fill Tables
     
