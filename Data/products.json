@@ -1,437 +1,807 @@
 {
   {
-    "title" : "Aubergine",
+    "name" : "Aubergine",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7, 8, 9, 10]
   },
   {
-    "title" : "Blumenkohl",
+    "name" : "Blumenkohl",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Bodenkohlrabi",
+    "name" : "Bodenkohlrabi",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Bohnen",
+    "name" : "Bohnen",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7, 8, 9, 10]
   },
   {
-    "title" : "Broccoli",
+    "name" : "Broccoli",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Bundrüebli",
+    "name" : "Bundrüebli",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Bundzwiebel",
+    "name" : "Bundzwiebel",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Erbse",
+    "name" : "Erbse",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7]
   },
   {
-    "title" : "Favebohnen",
+    "name" : "Favebohnen",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7]
   },
   {
-    "title" : "Federkohl",
+    "name" : "Federkohl",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Fenchel",
+    "name" : "Fenchel",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Gemüsezwiebel",
+    "name" : "Gemüsezwiebel",
     "category" : "Gemüse",
     "seasonalMonths" : [8, 9, 10, 11, 12]
   },
   {
-    "title" : "Gurke",
+    "name" : "Gurke",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Herbstrübe",
+    "name" : "Herbstrübe",
     "category" : "Gemüse",
     "seasonalMonths" : [9, 10, 11, 12]
   },
   {
-    "title" : "Hefe",
+    "name" : "Hefe",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7, 8, 9]
   },
   {
-    "title" : "Knollensellerie",
+    "name" : "Knollensellerie",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Kohlrabi",
+    "name" : "Kohlrabi",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Krautstiel",
+    "name" : "Krautstiel",
     "category" : "Gemüse",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Kürbis",
+    "name" : "Kürbis",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Lauch",
+    "name" : "Lauch",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Mairübe",
+    "name" : "Mairübe",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6]
   },
   {
-    "title" : "Pastinake",
+    "name" : "Pastinake",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Patisson",
+    "name" : "Patisson",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7, 8, 9, 10]
   },
   {
-    "title" : "Peperoni",
+    "name" : "Peperoni",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7, 8, 9, 10]
   },
   {
-    "title" : "Radieschen",
+    "name" : "Radieschen",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Randen",
+    "name" : "Randen",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Rettich",
+    "name" : "Rettich",
     "category" : "Gemüse",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Rhabarber",
+    "name" : "Rhabarber",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6]
   },
   {
-    "title" : "Romanesco",
+    "name" : "Romanesco",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Rondini",
+    "name" : "Rondini",
     "category" : "Gemüse",
     "seasonalMonths" : [6, 7, 8, 9, 10]
   },
   {
-    "title" : "Rosenkohl",
+    "name" : "Rosenkohl",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 9, 10, 11, 12]
   },
   {
-    "title" : "Rotkraut",
+    "name" : "Rotkraut",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Rüebli",
+    "name" : "Rüebli",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Schnittmangold",
+    "name" : "Schnittmangold",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9]
   },
   {
-    "title" : "Schwarzwurzeln",
+    "name" : "Schwarzwurzeln",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 10, 11, 12]
   },
   {
-    "title" : "Spargeln grün & weiss",
+    "name" : "Spargeln grün & weiss",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6]
   },
   {
-    "title" : "Spinat",
+    "name" : "Spinat",
     "category" : "Gemüse",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Spitzkabis",
+    "name" : "Spitzkabis",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7]
   },
   {
-    "title" : "Stangensellerie",
+    "name" : "Stangensellerie",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Tomate",
+    "name" : "Tomate",
     "category" : "Gemüse",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Topinambur",
+    "name" : "Topinambur",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 11, 12]
   },
   {
-    "title" : "Weisskabis",
+    "name" : "Weisskabis",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Wirz",
+    "name" : "Wirz",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Zucchetti",
+    "name" : "Zucchetti",
     "category" : "Gemüse",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Zuckermais",
+    "name" : "Zuckermais",
     "category" : "Gemüse",
     "seasonalMonths" : [8, 9, 10, 11]
   },
   {
-    "title" : "Zwiebel",
+    "name" : "Zwiebel",
     "category" : "Gemüse",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Bataviasalat",
+    "name" : "Bataviasalat",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Brunnenkresse",
+    "name" : "Brunnenkresse",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Catalogna",
+    "name" : "Catalogna",
     "category" : "Salate",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Chicorée",
+    "name" : "Chicorée",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Chinakohl",
+    "name" : "Chinakohl",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Cicorino rosso",
+    "name" : "Cicorino rosso",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Cicorino verde",
+    "name" : "Cicorino verde",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5]
   },
   {
-    "title" : "Cima di rapa",
+    "name" : "Cima di rapa",
     "category" : "Salate",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Eichblattsalat",
+    "name" : "Eichblattsalat",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Eisbergsalat",
+    "name" : "Eisbergsalat",
     "category" : "Salate",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Endivie",
+    "name" : "Endivie",
     "category" : "Salate",
     "seasonalMonths" : [5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Gartenkresse",
+    "name" : "Gartenkresse",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Kopfsalat",
+    "name" : "Kopfsalat",
     "category" : "Salate",
     "seasonalMonths" : [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Lattich",
+    "name" : "Lattich",
     "category" : "Salate",
     "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Lollosalat",
+    "name" : "Lollosalat",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Löwenzahn",
+    "name" : "Löwenzahn",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 4, 12]
   },
   {
-    "title" : "Nüsslisalat",
+    "name" : "Nüsslisalat",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Portulak",
+    "name" : "Portulak",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Rucola",
+    "name" : "Rucola",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Schnittsalat",
+    "name" : "Schnittsalat",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10, 11]
   },
   {
-    "title" : "Spinat",
+    "name" : "Spinat",
     "category" : "Salate",
     "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10]
   },
   {
-    "title" : "Zuckerhut",
+    "name" : "Zuckerhut",
     "category" : "Salate",
     "seasonalMonths" : [1, 2, 3, 6, 7, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Aprikosen",
+    "name" : "Aprikosen",
     "category" : "Früchte",
     "seasonalMonths" : [6, 7, 8]
   },
   {
-    "title" : "Birnen",
+    "name" : "Birnen",
     "category" : "Früchte",
     "seasonalMonths" : [1, 2, 3, 4, 8, 9, 10, 11, 12]
   },
   {
-    "title" : "Kirschen",
+    "name" : "Kirschen",
     "category" : "Früchte",
     "seasonalMonths" : [6, 7, 8]
   },
   {
-    "title" : "Mirabellen",
+    "name" : "Mirabellen",
     "category" : "Früchte",
     "seasonalMonths" : [8, 9]
   },
   {
-    "title" : "Nektarinen",
+    "name" : "Nektarinen",
     "category" : "Früchte",
     "seasonalMonths" : [7, 8]
   },
   {
-    "title" : "Pfirsiche",
+    "name" : "Pfirsiche",
     "category" : "Früchte",
     "seasonalMonths" : [7, 8]
   },
   {
-    "title" : "Pflaumen",
+    "name" : "Pflaumen",
     "category" : "Früchte",
     "seasonalMonths" : [8, 9]
   },
   {
-    "title" : "Quitten",
+    "name" : "Quitten",
     "category" : "Früchte",
     "seasonalMonths" : [9, 10, 11]
   },
   {
-    "title" : "Reineclauden",
+    "name" : "Reineclauden",
     "category" : "Früchte",
     "seasonalMonths" : [8, 9]
   },
   {
-    "title" : "Trauben",
+    "name" : "Trauben",
     "category" : "Früchte",
     "seasonalMonths" : [9, 10]
   },
   {
-    "title" : "Zwetschgen",
+    "name" : "Zwetschgen",
     "category" : "Früchte",
     "seasonalMonths" : [7, 8, 9, 10]
   },
   {
-    "title" : "Brombeeren",
+    "name" : "Brombeeren",
     "category" : "Beeren",
     "seasonalMonths" : [7, 8, 9]
   },
   {
-    "title" : "Erdbeeren",
+    "name" : "Erdbeeren",
     "category" : "Beeren",
     "seasonalMonths" : [5, 6, 7, 8, 9]
   },
   {
-    "title" : "Heidelbeeren",
+    "name" : "Heidelbeeren",
     "category" : "Beeren",
     "seasonalMonths" : [7, 8, 9]
   },
   {
-    "title" : "Himbeeren",
+    "name" : "Himbeeren",
     "category" : "Beeren",
     "seasonalMonths" : [6, 7, 8, 9]
   },
   {
-    "title" : "Holunderbeeren",
+    "name" : "Holunderbeeren",
     "category" : "Beeren",
     "seasonalMonths" : [8, 9]
   },
   {
-    "title" : "Johannisbeeren",
+    "name" : "Johannisbeeren",
     "category" : "Beeren",
     "seasonalMonths" : [7, 8]
   },
   {
-    "title" : "Preiselbeere",
+    "name" : "Preiselbeere",
     "category" : "Beeren",
     "seasonalMonths" : [7, 8, 9]
   },
   {
-    "title" : "Stachelbeeren",
+    "name" : "Stachelbeeren",
     "category" : "Beeren",
     "seasonalMonths" : [7]
   },
+  {
+    "name" : "Berner Rosen",
+    "category" : "Äpfel",
+    "seasonalMonths" : [9, 10, 11, 12]
+  },
+  {
+    "name" : "Boskoop",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Braeburn",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 10, 11, 12]
+  },
+  {
+    "name" : "Cox Orange",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Elstar",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Gala",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Glockenapfel",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 10, 11, 12]
+  },
+  {
+    "name" : "Golden Delicious",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Granny Smith",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 11, 12]
+  },
+  {
+    "name" : "Gravensteiner",
+    "category" : "Äpfel",
+    "seasonalMonths" : [8, 9, 10]
+  },
+  {
+    "name" : "Idared",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 10, 11, 12]
+  },
+  {
+    "name" : "Jonagold",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Klarapfel",
+    "category" : "Äpfel",
+    "seasonalMonths" : [7]
+  },
+  {
+    "name" : "Maigold",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12]
+  },
+  {
+    "name" : "Milwa (Diwa)",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 11, 12]
+  },
+  {
+    "name" : "Rubinette",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Sauergrauech",
+    "category" : "Äpfel",
+    "seasonalMonths" : [8, 9, 10]
+  },
+  {
+    "name" : "Summerred",
+    "category" : "Äpfel",
+    "seasonalMonths" : [8, 9, 10]
+  },
+  {
+    "name" : "Topaz",
+    "category" : "Äpfel",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 10, 11, 12]
+  },
+  {
+    "name" : "Agria",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Amandine",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Annabelle",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Bintje",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Charlotte",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Désirée",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Ditta",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Frühkartoffel",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [6, 7, 8]
+  },
+  {
+    "name" : "Gourmandine",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Jelly",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Lady Christl",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Lady Felicia",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Ratte",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Süsskartoffel",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Victoria",
+    "category" : "Kartoffeln",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Bärlauch",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [3, 4]
+  },
+  {
+    "name" : "Basilikum",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [5, 6, 7, 8, 9]
+  },
+  {
+    "name" : "Bohnenkraut",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Borretsch",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [5, 6, 7, 8, 9]
+  },
+  {
+    "name" : "Brennessel",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [3, 4, 5]
+  },
+  {
+    "name" : "Brunnenkresse",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Dillkraut",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9]
+  },
+  {
+    "name" : "Eisenkraut (Verveine)",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [6, 7, 8]
+  },
+  {
+    "name" : "Estragon",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Gänseblümchen",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [3, 4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Holunderblüte",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [5, 6]
+  },
+  {
+    "name" : "Kapuzinerblüte",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [6, 7, 8, 9]
+  },
+  {
+    "name" : "Kerbel",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Liebstöckel",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Majoran",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Minze",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Oregano",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Pelargonie (Duftgeranie)",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Petersilie",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Ringelblume (Calendula)",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9]
+  },
+  {
+    "name" : "Rosenblüten",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [5, 6, 7, 8, 9]
+  },
+  {
+    "name" : "Rosmarin",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Salbei",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Sauerampfer",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6]
+  },
+  {
+    "name" : "Schnittlauch",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Thymian",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Veilchen",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [3, 4, 5]
+  },
+  {
+    "name" : "Waldmeister",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [5, 6]
+  },
+  {
+    "name" : "Ysop",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : [5, 6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Zitronenmelisse",
+    "category" : "Kräuter und Blüten",
+    "seasonalMonths" : 4, 5, 6, 7, 8, 9, 10, 11]
+  },
+  {
+    "name" : "Austernpilz",
+    "category" : "Pilze",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Champignon",
+    "category" : "Pilze",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Eierschwamm",
+    "category" : "Pilze",
+    "seasonalMonths" : [6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Herbsttrompete",
+    "category" : "Pilze",
+    "seasonalMonths" : [9, 10]
+  },
+  {
+    "name" : "Kräuterseitling",
+    "category" : "Pilze",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Morchel",
+    "category" : "Pilze",
+    "seasonalMonths" : [3, 4, 5]
+  },
+  {
+    "name" : "Shiitake",
+    "category" : "Pilze",
+    "seasonalMonths" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "name" : "Steinpilz",
+    "category" : "Pilze",
+    "seasonalMonths" : [6, 7, 8, 9, 10]
+  },
+  {
+    "name" : "Trüffel schwarz",
+    "category" : "Pilze",
+    "seasonalMonths" : [1, 2, 3, 12]
+  },
+  {
+    "name" : "Trüffel weiss",
+    "category" : "Pilze",
+    "seasonalMonths" : [10, 11, 12]
+  }
 }
