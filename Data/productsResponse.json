@@ -1,0 +1,2276 @@
+[
+    {
+        "category": "Gemüse",
+        "name": "Aubergine",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            10,
+            9,
+            8,
+            7,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Blumenkohl",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Bodenkohlrabi",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Bohnen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            10,
+            9,
+            8,
+            7,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Broccoli",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Bundrüebli",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Bundzwiebel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Erbse",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Favebohnen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Federkohl",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Fenchel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Gemüsezwiebel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Gurke",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Herbstrübe",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Hefe",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Knollensellerie",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Kohlrabi",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Krautstiel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Kürbis",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Lauch",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Mairübe",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            5,
+            4
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Pastinake",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Patisson",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            10,
+            9,
+            8,
+            7,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Peperoni",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            10,
+            9,
+            8,
+            7,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Radieschen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Randen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Rettich",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Rhabarber",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Romanesco",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Rondini",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Rosenkohl",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Rotkraut",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Rüebli",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Schnittmangold",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Schwarzwurzeln",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Spargeln grün & weiss",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Spinat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Spitzkabis",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Stangensellerie",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Tomate",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Topinambur",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Weisskabis",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Wirz",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Zucchetti",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Zuckermais",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Gemüse",
+        "name": "Zwiebel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Bataviasalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Brunnenkresse",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Catalogna",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Chicorée",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Chinakohl",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Cicorino rosso",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Cicorino verde",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Cima di rapa",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Eichblattsalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Eisbergsalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Endivie",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Gartenkresse",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Kopfsalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Lattich",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Lollosalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Löwenzahn",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Nüsslisalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Portulak",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Rucola",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Schnittsalat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Spinat",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Salate",
+        "name": "Zuckerhut",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Aprikosen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Birnen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Kirschen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Mirabellen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Nektarinen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            7
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Pfirsiche",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            7
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Pflaumen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Quitten",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Reineclauden",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Trauben",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Früchte",
+        "name": "Zwetschgen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Brombeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Erdbeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Heidelbeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Himbeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Holunderbeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Johannisbeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            8
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Preiselbeere",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Beeren",
+        "name": "Stachelbeeren",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Berner Rosen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Boskoop",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Braeburn",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Cox Orange",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Elstar",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Gala",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Glockenapfel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Golden Delicious",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Granny Smith",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Gravensteiner",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Idared",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Jonagold",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Klarapfel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            7
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Maigold",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Milwa (Diwa)",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Rubinette",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Sauergrauech",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Summerred",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Äpfel",
+        "name": "Topaz",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Agria",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Amandine",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Annabelle",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Bintje",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Charlotte",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Désirée",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Ditta",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Frühkartoffel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Gourmandine",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Jelly",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Lady Christl",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Lady Felicia",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Ratte",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Süsskartoffel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kartoffeln",
+        "name": "Victoria",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Bärlauch",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Basilikum",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Bohnenkraut",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Borretsch",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Brennessel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Brunnenkresse",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Dillkraut",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Eisenkraut (Verveine)",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Estragon",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Gänseblümchen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Holunderblüte",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Kapuzinerblüte",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Kerbel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Liebstöckel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Majoran",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Minze",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Oregano",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Pelargonie (Duftgeranie)",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Petersilie",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Ringelblume (Calendula)",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Rosenblüten",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Rosmarin",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Salbei",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Sauerampfer",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            5,
+            4
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Schnittlauch",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Thymian",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Veilchen",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Waldmeister",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Ysop",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Kräuter und Blüten",
+        "name": "Zitronenmelisse",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Austernpilz",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Champignon",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Eierschwamm",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Herbsttrompete",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Kräuterseitling",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Morchel",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Shiitake",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Steinpilz",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Trüffel schwarz",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            1,
+            2,
+            3,
+            12
+        ]
+    },
+    {
+        "category": "Pilze",
+        "name": "Trüffel weiss",
+        "country": "Schweiz",
+        "seasonalMonths": [
+            10,
+            11,
+            12
+        ]
+    }
+]
