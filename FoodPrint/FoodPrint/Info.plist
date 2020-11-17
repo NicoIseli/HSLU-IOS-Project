@@ -69,5 +69,10 @@
 		<string>Montserrat-Regular.otf</string>
 		<string>Montserrat-SemiBold.otf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
