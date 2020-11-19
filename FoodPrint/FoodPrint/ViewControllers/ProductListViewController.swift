@@ -8,7 +8,7 @@
 import UIKit
 
 
-class ProductListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProductListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     
     
@@ -25,6 +25,9 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // VARIABLE THAT KEEPS THE FILTERED PRODUCT-DATA ACCORDING TO USER-SETTINGS
     var filteredProducts: [Product] = []
     
+    // VARIABLE THAT KEEPS FILTERED DATA OF SEARCHBOX
+    var searchBarProducts: [Product] = []
+    
     // VARIABLE THAT KEEPS USER-SETTINGS
     var user: User?
     
@@ -38,7 +41,8 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: - IBOUTLETS
     
     // VARIABLE THAT KEEPS REFERENCE TO TABLE VIEW ON STORYBOARD
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     
@@ -57,6 +61,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        searchBar.delegate = self
         self.productsDTO = fetchProducts()
         createUser()
         readUser()
@@ -114,14 +119,19 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // FUNCTION TO DEFINE THE NUMBER OF ROWS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredProducts.count
+        return searchBarProducts.count
     }
     
     // FUNCTION TO SET THE CONTENT OF EACH CELL
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
-        cell.textLabel?.text = "\(filteredProducts[indexPath.row].name) \(filteredProducts[indexPath.row].rating)"
+        cell.textLabel?.text = "\(searchBarProducts[indexPath.row].name)"
         return cell
+    }
+    
+    // FUNCTION TO DEFINE THE AMOUNT OF SECTIONS IN TABLE VIEW
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     // FUNCTION TO REFRESH THE TABLE VIEW
@@ -143,13 +153,39 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         if segue.identifier == "product", let productViewController = segue.destination as? ProductViewController{
             productViewController.product = filteredProducts[indexPath.row]
          }
+        
+        //TODO Create View in Storyboard and add identifier
+        if segue.identifier == "user-settings", let userSettingsViewController = segue.destination as? UserSettingsViewController{
+            userSettingsViewController.user = self.user
+            userSettingsViewController.modalPresentationStyle = .fullScreen
+         }
+        
+        //TODO Create View in Storyboard and add identifier
+        if segue.identifier == "about", let aboutViewController = segue.destination as? AboutViewController{
+            aboutViewController.modalPresentationStyle = .fullScreen
+         }
+        
      }
     
-    // FUNCTION TO CHANGE VIEW TO USER SETTINGS VIEW CONTROLLER
-    // TODO
+
     
-    // FUNCTION TO CHANGE VIEW TO ABOUT VIEW CONTROLLER
-    // TODO
+    
+    
+    // MARK: - SEARCHBAR
+    
+    // FUNCTION TO FILTER FILTERED PRODUCTS BY USER INPUT IN SEARCH BAR
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            searchBarProducts = filteredProducts
+        } else {
+            for product in filteredProducts {
+                if product.name.lowercased().contains(searchText.lowercased()) {
+                    searchBarProducts.append(product)
+                }
+            }
+        }
+        reloadProducts()
+    }
     
     
     
