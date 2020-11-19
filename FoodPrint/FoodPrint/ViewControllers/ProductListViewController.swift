@@ -55,18 +55,21 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // FUNCTION WHICH IS CALLED AFTER VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         self.productsDTO = fetchProducts()
+        createUser()
+        readUser()
+    
         
         // ADD USER-DATA TO USER-ATTRIBUTE
-        readUser()
+        // readUser()
         
         // CONVERT THE DTO FROM API TO THE STRUCTURE OF PRODUCT-CLASS AND ADD THEM TO PRODUCTS-ATTRIBUTE
         convertToProductFromDTO()
         
         // FILTER THE PRODUCTS-ATTRIBUTE BASED ON USER-SETTINGS AND ADD RESULT TO FILTEREDPRODUCTS-ATTRIBUTE
         filterProductData()
-        
-        
     }
    
     
@@ -77,28 +80,30 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // STRUCT
     struct ProductDTO: Codable{
-        let name: String
         let category : String
+        let name: String
         let country: String
-        let months: [Int]
+        let seasonalMonths: [Int]
     }
     
     // STRUCT WITH A LIST OF DTO ON API
-    struct ProductListOfDTO: Codable{
+    struct ProductListOfDTO: Codable {
         let decodedProductsDTO: [ProductDTO]
     }
     
     // FUNCTION TO GET THE PRODUCT-DATA FROM API
     func fetchProducts() -> [ProductDTO] {
-        var fetchedProductsDTO: [ProductDTO] = []
+        var fetchedProducts: [ProductDTO]?
         do{
             let encodedData = try Data(contentsOf: self.urlProducts)
-            let decodedData = try JSONDecoder().decode(ProductListOfDTO.self, from: encodedData)
-            fetchedProductsDTO = decodedData.decodedProductsDTO
+            print("Printing fetched data now")
+            print(encodedData.description)
+            fetchedProducts = try JSONDecoder().decode([ProductDTO].self, from: encodedData)
+            // fetchedProductsDTO = decodedData.decodedProductsDTO
         } catch {
             print("Products could not be fetched from API")
         }
-        return fetchedProductsDTO
+        return fetchedProducts!
     }
 
     
@@ -114,7 +119,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // FUNCTION TO SET THE CONTENT OF EACH CELL
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
         cell.textLabel?.text = "\(filteredProducts[indexPath.row].name) \(filteredProducts[indexPath.row].rating)"
         return cell
     }
@@ -155,6 +160,22 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // CONSTANT TO KEEP MANAGED-OBJECT-CONTEXT OF PERSISTENCE-CONTAINER
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+    func createUser() {
+        
+        var user = User(context: self.context)
+        user.country = "Schweiz"
+        user.language = "Deutsch"
+        user.preferences = ["Gemüse"]
+        user.rating = 4
+        
+        do {
+            try self.context.save()
+        } catch {
+            print("User couldnt be created");
+        }
+        print("User was created")
+    }
+    
     // FUNCTION TO READ USER-SETTINGS
     func readUser() {
         var users: [User] = []
@@ -171,10 +192,10 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             // let sort = NSSortDescriptor(key: "language", ascending: true)
             // request.sortDescriptor = [sort]
             // self.user = try context.fetch(request)
-            
             users = try self.context.fetch(User.fetchRequest())
             if (users.count > 0){
-                self.user = users[0]
+                print(users.first)
+                self.user = users.first
             }
         } catch {
            print("User could not be read")
@@ -203,11 +224,11 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // FUNCTION TO CONVERT DTO TO TYPE OF CLASS PRODUCT
     func convertToProductFromDTO() {
         for productDTO in self.productsDTO{
-            let rating: Int = rateProduct(months: productDTO.months)
+            let rating: Int = rateProduct(months: productDTO.seasonalMonths)
             let name: String = productDTO.name
             let category: String = productDTO.category
             let country: String = productDTO.country
-            let months: [Int] = productDTO.months
+            let months: [Int] = productDTO.seasonalMonths.sorted()
             
             self.products.append(Product(rating: rating, name: name, category: category, country: country, months: months))
             
@@ -224,9 +245,6 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         let currentMonth = Calendar.current.component(.month, from: Date())
         
         switch(months.count) {
-            case 0  :
-                
-                break
             case 1  :
                 startMonth = months[0]
                 endMonth = months[0]
@@ -248,7 +266,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             break
         }
         
-        rating = calculateRating(currentMonth: currentMonth, startMonth: startMonth!, endMonth: endMonth!)
+        rating = calculateRating(currentMonth: currentMonth, startMonth: startMonth!, endMonth: endMonth!, isTransitionYear: existingYearTransition)
         
         return rating!
     }
@@ -273,17 +291,19 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     func evaluateDatesWithYearTransition(months: [Int]) -> [Int] {
         var startMonth : Int?
         var endMonth : Int?
-        
+        if (months.count == 12) {
+            return [1, 12]
+        }
         for (index, month) in months.enumerated() {
             if ((months[index + 1] - months[index]) != 1){
-                startMonth = months[index]
+                endMonth = months[index]
                 break
             }
         }
         
         for(index, month) in months.enumerated() {
             if((months[months.count-(index+1)] - months[months.count-(index + 2)]) != 1) {
-                endMonth = months[months.count - (index+1)]
+                startMonth = months[months.count - (index+1)]
                 break
             }
         }
@@ -292,28 +312,37 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     // FUNCTION TO CALCULATE THE RATING BASED ON DATES
-    func calculateRating(currentMonth: Int, startMonth: Int, endMonth: Int) -> Int {
-        
-        if startMonth < currentMonth && endMonth > currentMonth {
-            return 3
-        } else if startMonth == currentMonth || endMonth == currentMonth {
-            return 2
-        } else if (startMonth-1) == currentMonth || ((endMonth+1)%12) == currentMonth {
-            return 1
-        } else if (startMonth-1) == 0 && currentMonth == 12{
-            return 1
+    func calculateRating(currentMonth: Int, startMonth: Int, endMonth: Int, isTransitionYear: Bool) -> Int {
+        if (!isTransitionYear) {
+            if startMonth < currentMonth && endMonth > currentMonth {
+                return 3
+            } else if startMonth == currentMonth || endMonth == currentMonth {
+                return 2
+            } else if (startMonth-1) == currentMonth || (endMonth+1)%12 == currentMonth {
+                return 1
+            } else if (startMonth-1) == 0 && currentMonth == 12 {
+                return 1
+            } else {
+                return 0
+            }
         } else {
-            return 0
+            if (currentMonth < startMonth && currentMonth > endMonth)  {
+                return 0
+            } else if (currentMonth == startMonth || currentMonth == endMonth) {
+                return 2
+            } else if ((currentMonth + 1) == startMonth) || ((currentMonth - 1) == endMonth) {
+                return 1
+            } else {
+                return 3
+            }
         }
     }
     
     // FUNCTION TO FILTER THE PRODUCT-DATA ACCORDING TO USER-SETTINGS
     func filterProductData() {
-        
         var tempFilteredProducts: [Product] = []
-        
         for product in self.products{
-            if product.rating == self.user!.rating{
+            if product.rating >= self.user!.rating{
                 for userPreference in self.user!.preferences! {
                     if product.category == userPreference{
                         tempFilteredProducts.append(product)
@@ -321,7 +350,6 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
                 }
             }
         }
-        
         self.filteredProducts = tempFilteredProducts
     }
 }
