@@ -41,10 +41,8 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: - IBOUTLETS
     
     // VARIABLE THAT KEEPS REFERENCE TO TABLE VIEW ON STORYBOARD
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    
-    
+    @IBOutlet weak var tableView: UITableView!
     
     
     
@@ -75,6 +73,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         
         // FILTER THE PRODUCTS-ATTRIBUTE BASED ON USER-SETTINGS AND ADD RESULT TO FILTEREDPRODUCTS-ATTRIBUTE
         filterProductData()
+        reloadProducts()
     }
    
     
@@ -144,14 +143,13 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     // MARK: - SEGUES
-    
     // FUNCTION TO CHANGE VIEW TO PRODUCT VIEW CONTROLLER
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let indexPath = self.tableView.indexPathForSelectedRow!
          
         if segue.identifier == "product", let productViewController = segue.destination as? ProductViewController{
-            productViewController.product = filteredProducts[indexPath.row]
+            productViewController.product = searchBarProducts[indexPath.row]
          }
         
         //TODO Create View in Storyboard and add identifier
@@ -178,6 +176,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         if searchText == "" {
             searchBarProducts = filteredProducts
         } else {
+            self.searchBarProducts = []
             for product in filteredProducts {
                 if product.name.lowercased().contains(searchText.lowercased()) {
                     searchBarProducts.append(product)
@@ -202,7 +201,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         user.country = "Schweiz"
         user.language = "Deutsch"
         user.preferences = ["Gemüse"]
-        user.rating = 4
+        user.rating = 1
         
         do {
             try self.context.save()
@@ -230,8 +229,8 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             // self.user = try context.fetch(request)
             users = try self.context.fetch(User.fetchRequest())
             if (users.count > 0){
-                print(users.first)
-                self.user = users.first
+                print(users.last)
+                self.user = users.last
             }
         } catch {
            print("User could not be read")
@@ -387,5 +386,6 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             }
         }
         self.filteredProducts = tempFilteredProducts
+        self.searchBarProducts = tempFilteredProducts
     }
 }
