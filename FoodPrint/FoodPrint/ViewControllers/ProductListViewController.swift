@@ -150,6 +150,8 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
          
         if segue.identifier == "product", let productViewController = segue.destination as? ProductViewController{
             productViewController.product = searchBarProducts[indexPath.row]
+            print("Seague gives product")
+            print(searchBarProducts[indexPath.row])
          }
         
         //TODO Create View in Storyboard and add identifier
