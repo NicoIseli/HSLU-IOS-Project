@@ -8,22 +8,19 @@
 import UIKit
 
 class UserSettingsViewController: UIViewController {
-
-    
-    
-    
     
     // MARK: - ATTRIBUTES
     var user: User?
-    
-    
-    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var notifyProductList: NotifyReloadCoreData?
     
     
     // MARK: - IBOUTLETS
 
-    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var ratingSliderLabel: UILabel!
     @IBOutlet weak var ratingSlider: UISlider!
+    @IBOutlet weak var ratingTitleLabel: UILabel!
+    @IBOutlet weak var ratingDescriptionLabel: UILabel!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var vegetableButton: UIButton!
     @IBOutlet weak var fruitButton: UIButton!
@@ -39,28 +36,9 @@ class UserSettingsViewController: UIViewController {
 
     // FUNCTION TO HANDLE SLIDER CHANGES
     @IBAction func onRatingSliderChanged(sender: UISlider){
-
-      let startText: String = "Mindestqualität: "
-      let castedNumber: Int = Int(sender.value)
-
-      switch(castedNumber) {
-          case 0  :
-              self.ratingLabel.text = startText + "Nicht saisonal"
-              break
-          case 1  :
-              self.ratingLabel.text = startText + "Knapp nicht saisonal"
-              break
-          case 2  :
-              self.ratingLabel.text = startText + "Knapp Saisonal"
-              break
-          case 3  :
-              self.ratingLabel.text = startText + "Saisonal"
-              break
-         default :
-              break
-      }
-        
-        self.user?.rating = Int16(castedNumber)
+        let castedRating = Int(sender.value)
+        self.ratingSliderLabel.text = getRatingLabel(castedRating)
+        self.user?.rating = Int16(castedRating)
     }
 
     // FUNCTION TO HANDLE PRESS ON VEGETABLE BUTTON
@@ -201,6 +179,12 @@ class UserSettingsViewController: UIViewController {
     
     // FUNCTION TO HANDLE PRESS ON DONE BUTTON
     @IBAction func onDoneButtonPressed(_ sender: Any){
+        do {
+            try self.context.save()
+        } catch {
+            print("Couldn't save the new Preferences of the User!!!")
+        }
+        notifyProductList?.notifyDelegate()
         self.dismiss(animated: true, completion: nil)
     }
 
@@ -212,6 +196,7 @@ class UserSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeButtonsAndLabels()
 
         //TODO READ THE USER AN INITIALIZE IT
         
@@ -225,7 +210,7 @@ class UserSettingsViewController: UIViewController {
     // MARK: - LOGIC
 
     // FUNCTION TO INITIALIZE DESIGN OF PREFERENCE-BUTTONS
-    func initializeButtonDesign(){
+    func initializeButtonsAndLabels(){
 
         if self.user!.preferences!.contains("Gemüse"){
           doDesignChangeOfPreference(sender: vegetableButton)
@@ -247,7 +232,7 @@ class UserSettingsViewController: UIViewController {
           doDesignChangeOfPreference(sender: potatoeButton)
         }
 
-        if self.user!.preferences!.contains("Kräuter & Blüten"){
+        if self.user!.preferences!.contains("Kräuter und Blüten"){
           doDesignChangeOfPreference(sender: herbButton)
         }
 
@@ -258,6 +243,10 @@ class UserSettingsViewController: UIViewController {
         if self.user!.preferences!.contains("Äpfel"){
           doDesignChangeOfPreference(sender: appleButton)
         }
+        
+        self.ratingSlider.setValue(Float(self.user!.rating), animated: true)
+        self.ratingSliderLabel.text = getRatingLabel(Int(self.user!.rating))
+
     }
 
     // FUNCTION TO DO DESIGN-CHANGES ON BUTTON
@@ -270,5 +259,24 @@ class UserSettingsViewController: UIViewController {
     // FUNCTION TO UNDO DESIGN-CHANGES ON BUTTON
     func undoDesignChangeOfPreference(sender: UIButton){
         sender.backgroundColor = .clear
+        sender.layer.cornerRadius = 0
+        sender.layer.borderWidth = 0
     }
+    
+    func getRatingLabel(_ ratingNumber: Int) -> String {
+        let startText: String = "Mindestqualität: "
+        switch(ratingNumber) {
+            case 0  :
+                return startText + "Nicht saisonal"
+            case 1  :
+                return startText + "Knapp nicht saisonal"
+            case 2  :
+                return startText + "Knapp Saisonal"
+            case 3  :
+                return startText + "Saisonal"
+           default :
+                return "Ratingnumber unknown :: " + String(ratingNumber)
+        }
+    }
+    
 }

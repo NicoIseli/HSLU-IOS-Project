@@ -25,6 +25,7 @@
 		376F7EAB2564260E0044AD33 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F7EAA2564260E0044AD33 /* ProductViewController.swift */; };
 		376F7EAD256426500044AD33 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F7EAC256426500044AD33 /* ProductListViewController.swift */; };
 		376F7EB425644E870044AD33 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F7EB325644E870044AD33 /* Product.swift */; };
+		B636E87C25691F8600C2AE6C /* NotifyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B636E87B25691F8600C2AE6C /* NotifyDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		376F7EAA2564260E0044AD33 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		376F7EAC256426500044AD33 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		376F7EB325644E870044AD33 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B636E87B25691F8600C2AE6C /* NotifyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				370731CF254AE06D00240DF7 /* SceneDelegate.swift */,
 				370731CD254AE06D00240DF7 /* AppDelegate.swift */,
+				B636E87B25691F8600C2AE6C /* NotifyDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				370731D2254AE06D00240DF7 /* ViewController.swift in Sources */,
 				376F7EB425644E870044AD33 /* Product.swift in Sources */,
 				376F7EAB2564260E0044AD33 /* ProductViewController.swift in Sources */,
+				B636E87C25691F8600C2AE6C /* NotifyDelegate.swift in Sources */,
 				373A22C62566B58400B67366 /* AboutViewController.swift in Sources */,
 				373A22C82566B5CB00B67366 /* UserSettingsViewController.swift in Sources */,
 				370731CE254AE06D00240DF7 /* AppDelegate.swift in Sources */,

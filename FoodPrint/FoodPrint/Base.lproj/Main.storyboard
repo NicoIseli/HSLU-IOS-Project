@@ -20,11 +20,9 @@
                                 <rect key="frame" x="147" y="20" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="about"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-yW-2ju" userLabel="userSettingsButton">
-                                <rect key="frame" x="257" y="20" width="28" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="user"/>
+                                <connections>
+                                    <segue destination="Huz-zL-p6D" kind="presentation" identifier="about" id="D1R-RK-kYo"/>
+                                </connections>
                             </button>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTF-46-hCA">
                                 <rect key="frame" x="0.0" y="73" width="414" height="44"/>
@@ -44,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="h9i-N2-38f" kind="showDetail" identifier="product" id="PKl-Pq-iTS"/>
+                                            <segue destination="h9i-N2-38f" kind="show" identifier="product" id="EBH-Ld-aAY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -53,6 +51,14 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="WAb-6A-mmN"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-yW-2ju" userLabel="userSettingsButton">
+                                <rect key="frame" x="244" y="19" width="28" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="user"/>
+                                <connections>
+                                    <segue destination="xzP-FZ-ZES" kind="presentation" identifier="user-settings" id="7Zl-nn-MCZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,7 +80,7 @@
             <objects>
                 <viewController id="h9i-N2-38f" customClass="ProductViewController" customModule="FoodPrint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CMG-bz-5GH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23s-CM-xxO" userLabel="seasonLabel">
@@ -197,7 +203,7 @@
             <objects>
                 <viewController id="Huz-zL-p6D" userLabel="About" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="35g-EV-Dav">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="FU7-ws-vCD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -206,39 +212,156 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qW4-6i-QKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="828"/>
+            <point key="canvasLocation" x="1623" y="844"/>
         </scene>
         <!--User-Settings-->
         <scene sceneID="eif-3l-bEI">
             <objects>
                 <viewController id="xzP-FZ-ZES" userLabel="User-Settings" customClass="UserSettingsViewController" customModule="FoodPrint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y4V-Mz-5rJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIi-JX-y2U">
-                                <rect key="frame" x="138" y="215" width="31" height="30"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-45-Fqe" userLabel="ratingSlider">
+                                <rect key="frame" x="66" y="247" width="285" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="about"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-z7-JVW">
-                                <rect key="frame" x="248" y="215" width="28" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="user"/>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-45-Fqe">
-                                <rect key="frame" x="65" y="332" width="285" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onRatingSliderChangedWithSender:" destination="xzP-FZ-ZES" eventType="valueChanged" id="Yl7-4C-R0v"/>
+                                </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6s-eg-EbX" userLabel="ratingSliderLabel">
+                                <rect key="frame" x="20" y="166" width="365" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Produkt Auswertung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-Jo-Jrd" userLabel="ratingTitleLabel">
+                                <rect key="frame" x="98" y="36" width="219" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahs-AR-CfL" userLabel="ratingDescriptionLabel">
+                                <rect key="frame" x="2" y="81" width="412" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Definieren Sie, inwiefern das Produkt 
+saisonal sein soll</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Präferenzen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-Mr-q9k" userLabel="preferencesLabel">
+                                <rect key="frame" x="98" y="362" width="219" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wählen sie die Kategorien, die sie sich gerne anzeigen lassen möchten: " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-JN-a0d" userLabel="preferencesDescriptionLabel">
+                                <rect key="frame" x="11" y="420" width="392" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2r-ry-OfB">
+                                <rect key="frame" x="140" y="486" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Früchte"/>
+                                <connections>
+                                    <action selector="onFruitButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="6ua-DF-5Xb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSv-CP-30i">
+                                <rect key="frame" x="240" y="486" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salate"/>
+                                <connections>
+                                    <action selector="onSaladButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="6dl-tn-Gny"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-tB-xn1">
+                                <rect key="frame" x="336" y="486" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Beeren"/>
+                                <connections>
+                                    <action selector="onBerryButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="794-Wk-pAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vn-yM-PiT">
+                                <rect key="frame" x="34" y="486" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gemüse"/>
+                                <connections>
+                                    <action selector="onVegetableButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="ZBH-MK-GAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-zm-Tef">
+                                <rect key="frame" x="34" y="542" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Kartoffeln"/>
+                                <connections>
+                                    <action selector="onPotatoeButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="iro-wj-kcH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-s4-dhh">
+                                <rect key="frame" x="34" y="604" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Kräuter und Blüten"/>
+                                <connections>
+                                    <action selector="onHerbButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="07z-5J-UUO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOr-4s-hrh">
+                                <rect key="frame" x="140" y="542" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pilze"/>
+                                <connections>
+                                    <action selector="onMushroomButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="MqA-OO-xln"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gML-jb-YnN">
+                                <rect key="frame" x="239" y="542" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Äpfel"/>
+                                <connections>
+                                    <action selector="onAppleButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="FKy-aT-5Wg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-fj-D85">
+                                <rect key="frame" x="187" y="734" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fertig"/>
+                                <connections>
+                                    <action selector="onDoneButtonPressed:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="sKp-fO-GQ5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oTA-Hf-wPc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="User-Einstellungen" id="NaH-aJ-hS6" userLabel="User-Settings"/>
+                    <connections>
+                        <outlet property="appleButton" destination="gML-jb-YnN" id="EDe-MR-6QE"/>
+                        <outlet property="berryButton" destination="mQ9-tB-xn1" id="uQz-8g-SvJ"/>
+                        <outlet property="doneButton" destination="SXs-fj-D85" id="QZo-7s-AhK"/>
+                        <outlet property="fruitButton" destination="b2r-ry-OfB" id="Xe1-dQ-pp5"/>
+                        <outlet property="herbButton" destination="jVE-s4-dhh" id="vsz-bQ-Nzf"/>
+                        <outlet property="mushroomButton" destination="MOr-4s-hrh" id="SaQ-Oj-9Gw"/>
+                        <outlet property="potatoeButton" destination="CDR-zm-Tef" id="7V5-HG-5B3"/>
+                        <outlet property="ratingDescriptionLabel" destination="ahs-AR-CfL" id="yiQ-GF-RyH"/>
+                        <outlet property="ratingSlider" destination="TjS-45-Fqe" id="ChA-cV-LGh"/>
+                        <outlet property="ratingSliderLabel" destination="n6s-eg-EbX" id="Dyo-ND-KsR"/>
+                        <outlet property="ratingTitleLabel" destination="TLJ-Jo-Jrd" id="NPY-qR-cdP"/>
+                        <outlet property="saladButton" destination="mSv-CP-30i" id="Hy5-HK-oZb"/>
+                        <outlet property="vegetableButton" destination="0Vn-yM-PiT" id="NGl-P1-Igt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkH-1H-jYP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1634.7826086956522" y="828.34821428571422"/>
+            <point key="canvasLocation" x="444.92753623188412" y="844.41964285714278"/>
         </scene>
     </scenes>
     <resources>

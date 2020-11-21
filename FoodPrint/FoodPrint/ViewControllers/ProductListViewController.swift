@@ -8,7 +8,9 @@
 import UIKit
 
 
-class ProductListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ProductListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, NotifyReloadCoreData {
+    
+    
     
     @IBOutlet weak var aboutButton: UIButton!
     @IBOutlet weak var userSettingsButton: UIButton!
@@ -141,23 +143,19 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     
-    
-    
     // MARK: - SEGUES
     // FUNCTION TO CHANGE VIEW TO PRODUCT VIEW CONTROLLER
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let indexPath = self.tableView.indexPathForSelectedRow!
          
         if segue.identifier == "product", let productViewController = segue.destination as? ProductViewController{
+            let indexPath = self.tableView.indexPathForSelectedRow!
             productViewController.product = searchBarProducts[indexPath.row]
-            print("Seague gives product")
-            print(searchBarProducts[indexPath.row])
          }
         
         //TODO Create View in Storyboard and add identifier
         if segue.identifier == "user-settings", let userSettingsViewController = segue.destination as? UserSettingsViewController{
             userSettingsViewController.user = self.user
+            userSettingsViewController.notifyProductList = self
             userSettingsViewController.modalPresentationStyle = .fullScreen
          }
         
@@ -232,6 +230,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             // self.user = try context.fetch(request)
             users = try self.context.fetch(User.fetchRequest())
             if (users.count > 0){
+                print("Reading User in Product List")
                 print(users.last)
                 self.user = users.last
             }
@@ -390,5 +389,13 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         }
         self.filteredProducts = tempFilteredProducts
         self.searchBarProducts = tempFilteredProducts
+    }
+    
+    // Reload ProductData by new User-Settings
+    func notifyDelegate() {
+        print("Using Delegate function")
+        readUser()
+        filterProductData()
+        reloadProducts()
     }
 }
