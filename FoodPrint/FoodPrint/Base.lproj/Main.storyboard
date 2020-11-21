@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a7c-Vu-pbC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a7c-Vu-pbC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -225,6 +225,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-45-Fqe" userLabel="ratingSlider">
                                 <rect key="frame" x="66" y="247" width="285" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.42352941179999998" green="0.74117647060000003" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onRatingSliderChangedWithSender:" destination="xzP-FZ-ZES" eventType="valueChanged" id="Yl7-4C-R0v"/>
                                 </connections>
@@ -236,26 +237,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Produkt Auswertung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-Jo-Jrd" userLabel="ratingTitleLabel">
-                                <rect key="frame" x="98" y="36" width="219" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahs-AR-CfL" userLabel="ratingDescriptionLabel">
-                                <rect key="frame" x="2" y="81" width="412" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Definieren Sie, inwiefern das Produkt 
-saisonal sein soll</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Präferenzen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-Mr-q9k" userLabel="preferencesLabel">
-                                <rect key="frame" x="98" y="362" width="219" height="66"/>
+                                <rect key="frame" x="34" y="377" width="128" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -267,77 +252,101 @@ saisonal sein soll</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2r-ry-OfB">
-                                <rect key="frame" x="140" y="486" width="53" height="30"/>
+                                <rect key="frame" x="175" y="486" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Früchte"/>
                                 <connections>
                                     <action selector="onFruitButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="6ua-DF-5Xb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSv-CP-30i">
-                                <rect key="frame" x="240" y="486" width="43" height="30"/>
+                                <rect key="frame" x="306" y="486" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Salate"/>
                                 <connections>
                                     <action selector="onSaladButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="6dl-tn-Gny"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-tB-xn1">
-                                <rect key="frame" x="336" y="486" width="49" height="30"/>
+                                <rect key="frame" x="259" y="604" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Beeren"/>
                                 <connections>
                                     <action selector="onBerryButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="794-Wk-pAJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vn-yM-PiT">
-                                <rect key="frame" x="34" y="486" width="57" height="30"/>
+                                <rect key="frame" x="42" y="486" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Gemüse"/>
                                 <connections>
                                     <action selector="onVegetableButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="ZBH-MK-GAb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-zm-Tef">
-                                <rect key="frame" x="34" y="542" width="68" height="30"/>
+                                <rect key="frame" x="38" y="542" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Kartoffeln"/>
                                 <connections>
                                     <action selector="onPotatoeButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="iro-wj-kcH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-s4-dhh">
-                                <rect key="frame" x="34" y="604" width="129" height="30"/>
+                                <rect key="frame" x="68" y="604" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Kräuter und Blüten"/>
                                 <connections>
                                     <action selector="onHerbButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="07z-5J-UUO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOr-4s-hrh">
-                                <rect key="frame" x="140" y="542" width="33" height="30"/>
+                                <rect key="frame" x="182" y="542" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Pilze"/>
                                 <connections>
                                     <action selector="onMushroomButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="MqA-OO-xln"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gML-jb-YnN">
-                                <rect key="frame" x="239" y="542" width="36" height="30"/>
+                                <rect key="frame" x="310" y="542" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Äpfel"/>
                                 <connections>
                                     <action selector="onAppleButtonPressedWithSender:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="FKy-aT-5Wg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-fj-D85">
-                                <rect key="frame" x="187" y="734" width="41" height="30"/>
+                                <rect key="frame" x="160" y="719" width="96" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fertig"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.74117647060000003" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Fertig">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDoneButtonPressed:" destination="xzP-FZ-ZES" eventType="touchUpInside" id="sKp-fO-GQ5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Produkt Auswertung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-Jo-Jrd" userLabel="ratingTitleLabel">
+                                <rect key="frame" x="42" y="63" width="219" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oTA-Hf-wPc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -351,7 +360,6 @@ saisonal sein soll</string>
                         <outlet property="herbButton" destination="jVE-s4-dhh" id="vsz-bQ-Nzf"/>
                         <outlet property="mushroomButton" destination="MOr-4s-hrh" id="SaQ-Oj-9Gw"/>
                         <outlet property="potatoeButton" destination="CDR-zm-Tef" id="7V5-HG-5B3"/>
-                        <outlet property="ratingDescriptionLabel" destination="ahs-AR-CfL" id="yiQ-GF-RyH"/>
                         <outlet property="ratingSlider" destination="TjS-45-Fqe" id="ChA-cV-LGh"/>
                         <outlet property="ratingSliderLabel" destination="n6s-eg-EbX" id="Dyo-ND-KsR"/>
                         <outlet property="ratingTitleLabel" destination="TLJ-Jo-Jrd" id="NPY-qR-cdP"/>

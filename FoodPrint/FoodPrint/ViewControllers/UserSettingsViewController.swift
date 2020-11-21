@@ -251,16 +251,15 @@ class UserSettingsViewController: UIViewController {
 
     // FUNCTION TO DO DESIGN-CHANGES ON BUTTON
     func doDesignChangeOfPreference(sender: UIButton){
-        sender.backgroundColor = UIColor(named: "#6CBD84")
-        sender.layer.cornerRadius = 5
-        sender.layer.borderWidth = 1
+        
+        sender.backgroundColor = UIColor(red: 0.42, green: 0.74, blue: 0.52, alpha: 1.00)
+        sender.layer.cornerRadius = 10
     }
 
     // FUNCTION TO UNDO DESIGN-CHANGES ON BUTTON
     func undoDesignChangeOfPreference(sender: UIButton){
         sender.backgroundColor = .clear
         sender.layer.cornerRadius = 0
-        sender.layer.borderWidth = 0
     }
     
     func getRatingLabel(_ ratingNumber: Int) -> String {

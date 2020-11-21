@@ -35,7 +35,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     var user: User?
     
     // CONSTANT THAT KEEPS URL FOR API-CALLS
-    let urlProducts = URL(string: "http://localhost:8080/api/v1/products/Schweiz")!
+    let urlProducts = URL(string: "http://ffischer-ios-h20.el.eee.intern:8080/api/v1/products/Schweiz")!
     
     
     
