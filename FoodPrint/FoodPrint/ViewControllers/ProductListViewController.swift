@@ -10,7 +10,8 @@ import UIKit
 
 class ProductListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
-    
+    @IBOutlet weak var aboutButton: UIButton!
+    @IBOutlet weak var userSettingsButton: UIButton!
     
     
     

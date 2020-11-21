@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUq-9K-fL1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUq-9K-fL1" userLabel="aboutButton">
                                 <rect key="frame" x="147" y="20" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="about"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-yW-2ju">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-yW-2ju" userLabel="userSettingsButton">
                                 <rect key="frame" x="257" y="20" width="28" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="user"/>
@@ -59,13 +59,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Products" id="acw-aA-dwF"/>
                     <connections>
+                        <outlet property="aboutButton" destination="qUq-9K-fL1" id="AYm-Dr-MbZ"/>
                         <outlet property="searchBar" destination="pTF-46-hCA" id="G2A-VV-q24"/>
                         <outlet property="tableView" destination="iVw-P8-X65" id="XTZ-BR-BBu"/>
+                        <outlet property="userSettingsButton" destination="aiu-yW-2ju" id="sI9-ek-dP5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="60.9375"/>
+            <point key="canvasLocation" x="1030" y="61"/>
         </scene>
         <!--Product-->
         <scene sceneID="Tyt-H7-v39">
@@ -189,6 +191,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1T5-Yf-9rh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="60.9375"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="4zb-gy-gc5">
+            <objects>
+                <viewController id="Huz-zL-p6D" userLabel="About" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="35g-EV-Dav">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FU7-ws-vCD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Opg-Kn-OZk" userLabel="Über Foodprint"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qW4-6i-QKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="828"/>
+        </scene>
+        <!--User-Settings-->
+        <scene sceneID="eif-3l-bEI">
+            <objects>
+                <viewController id="xzP-FZ-ZES" userLabel="User-Settings" customClass="UserSettingsViewController" customModule="FoodPrint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4V-Mz-5rJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIi-JX-y2U">
+                                <rect key="frame" x="138" y="215" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="about"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-z7-JVW">
+                                <rect key="frame" x="248" y="215" width="28" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="user"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-45-Fqe">
+                                <rect key="frame" x="65" y="332" width="285" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oTA-Hf-wPc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="User-Einstellungen" id="NaH-aJ-hS6" userLabel="User-Settings"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkH-1H-jYP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="828.34821428571422"/>
         </scene>
     </scenes>
     <resources>
