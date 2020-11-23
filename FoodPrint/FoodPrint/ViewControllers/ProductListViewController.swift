@@ -21,6 +21,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // VARIABLE THAT KEEPS PRODUCT-DATA OF DTO FROM API
     var productsDTO : [ProductDTO] = []
+    var whatever: string = "Hello"
     
     // VARIABLE THAT KEEPS THE PRODUCT-DATA
     var products: [Product] = []
@@ -36,10 +37,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // CONSTANT THAT KEEPS URL FOR API-CALLS
     let urlProducts = URL(string: "http://ffischer-ios-h20.el.eee.intern:8080/api/v1/products/Schweiz")!
-    
-    
-    
-    
+
     
     // MARK: - IBOUTLETS
     
