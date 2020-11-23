@@ -21,6 +21,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // VARIABLE THAT KEEPS PRODUCT-DATA OF DTO FROM API
     var productsDTO : [ProductDTO] = []
+    var string: String = "Hello"
     
     // VARIABLE THAT KEEPS THE PRODUCT-DATA
     var products: [Product] = []
