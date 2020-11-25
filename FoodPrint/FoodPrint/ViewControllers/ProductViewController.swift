@@ -24,15 +24,15 @@ class ProductViewController: UIViewController {
     // TODO; set language in usersettings
     func loadLabels() {
         self.categoryLabel.text = product!.category
-        self.scoreLabel.text = String(product!.rating)
+        self.scoreLabel.text = convertRatingToString(rating: product!.rating)
         self.seasonLabel.text = getMonthsAsString(product!.months)
         self.countryLabel.text = product!.country
         self.productNameLabel.text = product!.name
     }
     
     func getMonthsAsString(_ months: [Int]) -> String {
-        var firstMonth: String = ProductViewController.translateMonth(months.first!)
-        var lastMonth: String = ProductViewController.translateMonth(months.last!)
+        let firstMonth: String = ProductViewController.translateMonth(months.first!)
+        let lastMonth: String = ProductViewController.translateMonth(months.last!)
         return firstMonth + " - " + lastMonth
     }
     
@@ -68,6 +68,22 @@ class ProductViewController: UIViewController {
             return "Dezember"
         default:
             return "Monat existiert nicht..."
+        }
+    }
+    
+    // FUNCTION TO RETURN STRING FOR PRODUCT-RATING
+    func convertRatingToString (rating: Int) -> String {
+        switch rating {
+        case 0:
+            return "Nicht saisonal"
+        case 1:
+            return "Knapp nicht saisonal"
+        case 2:
+            return "Knapp saisonal"
+        case 3:
+            return "Saisonal"
+        default:
+            return ""
         }
     }
 

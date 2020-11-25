@@ -21,7 +21,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // VARIABLE THAT KEEPS PRODUCT-DATA OF DTO FROM API
     var productsDTO : [ProductDTO] = []
-    var whatever: string = "Hello"
+//    var whatever: string = "Hello"
     
     // VARIABLE THAT KEEPS THE PRODUCT-DATA
     var products: [Product] = []
@@ -150,18 +150,15 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             productViewController.product = searchBarProducts[indexPath.row]
          }
         
-        //TODO Create View in Storyboard and add identifier
         if segue.identifier == "user-settings", let userSettingsViewController = segue.destination as? UserSettingsViewController{
             userSettingsViewController.user = self.user
             userSettingsViewController.notifyProductList = self
             userSettingsViewController.modalPresentationStyle = .fullScreen
          }
         
-        //TODO Create View in Storyboard and add identifier
         if segue.identifier == "about", let aboutViewController = segue.destination as? AboutViewController{
             aboutViewController.modalPresentationStyle = .fullScreen
          }
-        
      }
     
 
@@ -196,7 +193,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func createUser() {
         
-        var user = User(context: self.context)
+        let user = User(context: self.context)
         user.country = "Schweiz"
         user.language = "Deutsch"
         user.preferences = ["Gemüse"]
@@ -229,7 +226,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             users = try self.context.fetch(User.fetchRequest())
             if (users.count > 0){
                 print("Reading User in Product List")
-                print(users.last)
+                print(users.last!)
                 self.user = users.last
             }
         } catch {
@@ -329,14 +326,14 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         if (months.count == 12) {
             return [1, 12]
         }
-        for (index, month) in months.enumerated() {
+        for (index, _) in months.enumerated() {
             if ((months[index + 1] - months[index]) != 1){
                 endMonth = months[index]
                 break
             }
         }
         
-        for(index, month) in months.enumerated() {
+        for(index, _) in months.enumerated() {
             if((months[months.count-(index+1)] - months[months.count-(index + 2)]) != 1) {
                 startMonth = months[months.count - (index+1)]
                 break

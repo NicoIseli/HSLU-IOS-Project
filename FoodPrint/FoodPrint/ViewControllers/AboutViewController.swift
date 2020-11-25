@@ -26,5 +26,10 @@ class AboutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // CHANGE BACKGROUND-COLOR OF STATUS-BAR
+        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+        statusBarView.backgroundColor = .black
+        view.addSubview(statusBarView)
     }
 }

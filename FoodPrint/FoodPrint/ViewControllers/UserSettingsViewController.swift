@@ -20,7 +20,6 @@ class UserSettingsViewController: UIViewController {
     @IBOutlet weak var ratingSliderLabel: UILabel!
     @IBOutlet weak var ratingSlider: UISlider!
     @IBOutlet weak var ratingTitleLabel: UILabel!
-    @IBOutlet weak var ratingDescriptionLabel: UILabel!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var vegetableButton: UIButton!
     @IBOutlet weak var fruitButton: UIButton!
@@ -196,6 +195,13 @@ class UserSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // CHANGE BACKGROUND-COLOR OF STATUS-BAR
+        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+        statusBarView.backgroundColor = .black
+        view.addSubview(statusBarView)
+        
+        // INITIALIZE THE BUTTONS AND LABLES IN THE RIGHT DESIGN
         initializeButtonsAndLabels()
 
         //TODO READ THE USER AN INITIALIZE IT
@@ -263,16 +269,15 @@ class UserSettingsViewController: UIViewController {
     }
     
     func getRatingLabel(_ ratingNumber: Int) -> String {
-        let startText: String = "Mindestqualität: "
         switch(ratingNumber) {
             case 0  :
-                return startText + "Nicht saisonal"
+                return "Nicht saisonal"
             case 1  :
-                return startText + "Knapp nicht saisonal"
+                return "Knapp nicht saisonal"
             case 2  :
-                return startText + "Knapp Saisonal"
+                return "Knapp Saisonal"
             case 3  :
-                return startText + "Saisonal"
+                return "Saisonal"
            default :
                 return "Ratingnumber unknown :: " + String(ratingNumber)
         }
