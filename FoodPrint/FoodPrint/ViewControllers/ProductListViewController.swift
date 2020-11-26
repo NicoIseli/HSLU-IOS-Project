@@ -117,6 +117,9 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // MARK: - TABLE VIEW
     
+    // ARRAY TO STORE RATING-ICONS
+    let ratingIcons = [UIImage(named: "Red"), UIImage(named: "Orange"), UIImage(named: "Yellow"), UIImage(named: "Green")]
+    
     // FUNCTION TO DEFINE THE NUMBER OF ROWS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchBarProducts.count
@@ -126,6 +129,18 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
         cell.textLabel?.text = "\(searchBarProducts[indexPath.row].name)"
+        switch searchBarProducts[indexPath.row].rating {
+        case 0:
+            cell.imageView?.image = ratingIcons[0]
+        case 1:
+            cell.imageView?.image = ratingIcons[1]
+        case 2:
+            cell.imageView?.image = ratingIcons[2]
+        case 3:
+            cell.imageView?.image = ratingIcons[3]
+        default:
+            print("No image was found!")
+        }
         return cell
     }
     

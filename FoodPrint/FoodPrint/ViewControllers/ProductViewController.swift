@@ -15,6 +15,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var seasonLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var ratingImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class ProductViewController: UIViewController {
         self.seasonLabel.text = getMonthsAsString(product!.months)
         self.countryLabel.text = product!.country
         self.productNameLabel.text = product!.name
+        let ratingImages = [UIImage(named: "Red"), UIImage(named: "Orange"), UIImage(named: "Yellow"), UIImage(named: "Green")]
+        self.ratingImage.image = ratingImages[product!.rating]
     }
     
     func getMonthsAsString(_ months: [Int]) -> String {
