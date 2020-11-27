@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUq-9K-fL1" userLabel="aboutButton">
-                                <rect key="frame" x="147" y="20" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUq-9K-fL1" userLabel="aboutButton">
+                                <rect key="frame" x="130" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Val-zv-tiB"/>
+                                    <constraint firstAttribute="width" constant="30" id="vCV-IX-2MB"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="about"/>
                                 <connections>
                                     <segue destination="Huz-zL-p6D" kind="presentation" identifier="about" id="D1R-RK-kYo"/>
@@ -51,9 +54,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="WAb-6A-mmN"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-yW-2ju" userLabel="userSettingsButton">
-                                <rect key="frame" x="244" y="19" width="28" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-yW-2ju" userLabel="userSettingsButton">
+                                <rect key="frame" x="254" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o9q-od-UcM"/>
+                                    <constraint firstAttribute="width" constant="30" id="qJn-0E-oHx"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="user"/>
                                 <connections>
                                     <segue destination="xzP-FZ-ZES" kind="presentation" identifier="user-settings" id="7Zl-nn-MCZ"/>
@@ -62,6 +68,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qUq-9K-fL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="BMh-lQ-fu0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aiu-yW-2ju" secondAttribute="trailing" constant="130" id="GXb-VV-Yvk"/>
+                            <constraint firstItem="aiu-yW-2ju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="H84-p3-zvB"/>
+                            <constraint firstItem="qUq-9K-fL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="K73-vV-81Z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Products" id="acw-aA-dwF"/>
                     <connections>
@@ -84,44 +96,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23s-CM-xxO" userLabel="seasonLabel">
-                                <rect key="frame" x="30" y="476" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="430.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aj-Pv-JeM" userLabel="categoryLabel">
-                                <rect key="frame" x="30" y="182" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="178.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E0-Sk-aFw" userLabel="countryLabel">
-                                <rect key="frame" x="30" y="578" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="511.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QX-Z4-1Ae" userLabel="actualScoreLabel">
-                                <rect key="frame" x="30" y="284" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="279.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saisonzeit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPo-qK-HKf">
-                                <rect key="frame" x="30" y="442" width="354" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="30" y="400" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aktuelle Auswertung" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKi-eC-wJc">
-                                <rect key="frame" x="30" y="250" width="354" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="30" y="249" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlH-kM-Tnq">
-                                <rect key="frame" x="30" y="148" width="354" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="30" y="148" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -132,15 +144,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uAb-uN-YCX">
-                                <rect key="frame" x="30" y="312" width="80" height="80"/>
+                                <rect key="frame" x="30" y="310" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="L7z-GC-xOT"/>
-                                    <constraint firstAttribute="width" constant="80" id="tbC-5X-uks"/>
+                                    <constraint firstAttribute="height" constant="60" id="L7z-GC-xOT"/>
+                                    <constraint firstAttribute="width" constant="60" id="tbC-5X-uks"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Land" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3j-bl-af9">
-                                <rect key="frame" x="30" y="544" width="354" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="30" y="481" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -162,10 +174,10 @@
                             <constraint firstItem="23s-CM-xxO" firstAttribute="top" secondItem="rPo-qK-HKf" secondAttribute="bottom" constant="10" id="CSU-8L-p6A"/>
                             <constraint firstItem="3E0-Sk-aFw" firstAttribute="top" secondItem="m3j-bl-af9" secondAttribute="bottom" constant="10" id="DKJ-Sr-iN0"/>
                             <constraint firstItem="obX-kL-NFI" firstAttribute="trailing" secondItem="atF-Or-K4c" secondAttribute="trailing" constant="30" id="DYX-Q4-gNp"/>
-                            <constraint firstItem="rPo-qK-HKf" firstAttribute="top" secondItem="uAb-uN-YCX" secondAttribute="bottom" constant="50" id="EsQ-Wy-V5h"/>
+                            <constraint firstItem="rPo-qK-HKf" firstAttribute="top" secondItem="uAb-uN-YCX" secondAttribute="bottom" constant="30" id="EsQ-Wy-V5h"/>
                             <constraint firstItem="3E0-Sk-aFw" firstAttribute="leading" secondItem="obX-kL-NFI" secondAttribute="leading" constant="30" id="GJ0-yF-c2h"/>
                             <constraint firstItem="YlH-kM-Tnq" firstAttribute="top" secondItem="atF-Or-K4c" secondAttribute="bottom" constant="50" id="HAw-Ku-4BX"/>
-                            <constraint firstItem="m3j-bl-af9" firstAttribute="top" secondItem="23s-CM-xxO" secondAttribute="bottom" constant="50" id="Kap-Kk-XpB"/>
+                            <constraint firstItem="m3j-bl-af9" firstAttribute="top" secondItem="23s-CM-xxO" secondAttribute="bottom" constant="30" id="Kap-Kk-XpB"/>
                             <constraint firstItem="hKi-eC-wJc" firstAttribute="top" secondItem="8Aj-Pv-JeM" secondAttribute="bottom" constant="50" id="L8M-SG-FRg"/>
                             <constraint firstItem="obX-kL-NFI" firstAttribute="trailing" secondItem="rPo-qK-HKf" secondAttribute="trailing" constant="30" id="LKz-jg-fRj"/>
                             <constraint firstItem="hKi-eC-wJc" firstAttribute="leading" secondItem="obX-kL-NFI" secondAttribute="leading" constant="30" id="Mv9-KH-zlM"/>
@@ -273,76 +285,76 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wer sind wir?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW3-qO-OHd">
-                                <rect key="frame" x="30" y="150" width="354" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="30" y="150" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtS-gX-wzQ">
-                                <rect key="frame" x="30" y="184" width="354" height="107.5"/>
+                                <rect key="frame" x="30" y="180.5" width="354" height="78"/>
                                 <string key="text">Wir bei FoodPrint haben es uns zum Ziel gemacht, Menschen vermehrt dazu zu ermutigen, regional und saisonal ihre Nahrungsmittel zu kaufen. Daher haben wir diese App entwickelt. Unser Ziel ist es, durch diese App einen Teil zu einer besseren Umwelt beizutragen</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wie ensteht die Produktbewertung?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oe-EZ-3Nl">
-                                <rect key="frame" x="30" y="341.5" width="354" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="30" y="308.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIa-r4-yOf">
-                                <rect key="frame" x="30" y="375.5" width="354" height="72"/>
+                                <rect key="frame" x="30" y="339" width="354" height="62.5"/>
                                 <string key="text">In den User-Einstellungen können Sie die Mindestbewertung angeben, nach denen die Nahrungsmittel gefiltert werden. Diese sind in folgende vier Kategorien unterteilt:</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nicht saisonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwZ-Cw-bUz">
-                                <rect key="frame" x="30" y="457.5" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="30" y="411.5" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Das Nahrungsmittel liegt mehr als ein Monat vor oder nach der eigentlichen Saison." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-J1-y6R">
-                                <rect key="frame" x="30" y="480.5" width="354" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="432.5" width="354" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knapp nicht saisonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-ul-TJU">
-                                <rect key="frame" x="30" y="526.5" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="30" y="474" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Das Nahrungsmittel liegt genau einen Monat vor oder nach der eigentlichen Saison." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-yx-G8k">
-                                <rect key="frame" x="30" y="549.5" width="354" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="495" width="354" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knapp saisonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9er-Tx-p5b">
-                                <rect key="frame" x="30" y="595.5" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="30" y="536.5" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Das Nahrungsmittel liegt an einem Randmonat." textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsQ-1V-5Du">
-                                <rect key="frame" x="30" y="618.5" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="557.5" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saisonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwO-qK-Rom">
-                                <rect key="frame" x="30" y="646.5" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="30" y="583.5" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Das Nahrungsmittel liegt voll in der Saison." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgf-DA-ILd">
-                                <rect key="frame" x="30" y="669.5" width="354" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="604.5" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -391,9 +403,9 @@
                             <constraint firstItem="h0V-Ca-4FL" firstAttribute="top" secondItem="FU7-ws-vCD" secondAttribute="top" id="ssF-oy-3X9"/>
                             <constraint firstItem="FU7-ws-vCD" firstAttribute="trailing" secondItem="9er-Tx-p5b" secondAttribute="trailing" constant="30" id="uZT-2c-OWK"/>
                             <constraint firstItem="fxB-J1-y6R" firstAttribute="top" secondItem="BwZ-Cw-bUz" secondAttribute="bottom" constant="5" id="vjI-78-4L3"/>
-                            <constraint firstItem="FU7-ws-vCD" firstAttribute="bottom" secondItem="orH-Zi-iyn" secondAttribute="bottom" constant="30" id="wrG-KM-yWr"/>
                             <constraint firstItem="5M3-ul-TJU" firstAttribute="leading" secondItem="FU7-ws-vCD" secondAttribute="leading" constant="30" id="xHG-jt-fjL"/>
                             <constraint firstItem="FtS-gX-wzQ" firstAttribute="centerX" secondItem="35g-EV-Dav" secondAttribute="centerX" id="xPO-6p-9cq"/>
+                            <constraint firstItem="FU7-ws-vCD" firstAttribute="bottom" secondItem="orH-Zi-iyn" secondAttribute="bottom" constant="30" id="y8j-ck-VxC"/>
                             <constraint firstItem="FU7-ws-vCD" firstAttribute="trailing" secondItem="zgf-DA-ILd" secondAttribute="trailing" constant="30" id="zAQ-WE-DZl"/>
                         </constraints>
                     </view>
@@ -412,32 +424,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-45-Fqe" userLabel="ratingSlider">
-                                <rect key="frame" x="38" y="306.5" width="338" height="31"/>
+                                <rect key="frame" x="38" y="279" width="338" height="31"/>
                                 <color key="tintColor" red="0.42352941179999998" green="0.74117647060000003" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onRatingSliderChangedWithSender:" destination="xzP-FZ-ZES" eventType="valueChanged" id="Yl7-4C-R0v"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6s-eg-EbX" userLabel="ratingSliderLabel">
-                                <rect key="frame" x="30" y="276" width="354" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="30" y="251" width="354" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Präferenzen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-Mr-q9k" userLabel="preferencesLabel">
-                                <rect key="frame" x="30" y="386.5" width="354" height="24"/>
+                                <rect key="frame" x="30" y="359" width="354" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wählen sie die Kategorien, die sie sich gerne anzeigen lassen möchten: " textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-JN-a0d" userLabel="preferencesDescriptionLabel">
-                                <rect key="frame" x="30" y="420.5" width="354" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="30" y="393" width="354" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2r-ry-OfB">
-                                <rect key="frame" x="301" y="466.5" width="53" height="30"/>
+                                <rect key="frame" x="307" y="434.5" width="47" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Früchte"/>
                                 <connections>
@@ -445,7 +458,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSv-CP-30i">
-                                <rect key="frame" x="60" y="506.5" width="43" height="30"/>
+                                <rect key="frame" x="60" y="472.5" width="38" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Salate"/>
                                 <connections>
@@ -453,7 +467,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-tB-xn1">
-                                <rect key="frame" x="305" y="586.5" width="49" height="30"/>
+                                <rect key="frame" x="311" y="548.5" width="43" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Beeren"/>
                                 <connections>
@@ -461,7 +476,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vn-yM-PiT">
-                                <rect key="frame" x="60" y="466.5" width="57" height="30"/>
+                                <rect key="frame" x="60" y="434.5" width="50" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Gemüse"/>
                                 <connections>
@@ -469,7 +485,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-zm-Tef">
-                                <rect key="frame" x="60" y="546.5" width="68" height="30"/>
+                                <rect key="frame" x="60" y="510.5" width="60" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Kartoffeln"/>
                                 <connections>
@@ -477,7 +494,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOr-4s-hrh">
-                                <rect key="frame" x="321" y="506.5" width="33" height="30"/>
+                                <rect key="frame" x="324" y="472.5" width="30" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Pilze"/>
                                 <connections>
@@ -485,7 +503,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gML-jb-YnN">
-                                <rect key="frame" x="318" y="546.5" width="36" height="30"/>
+                                <rect key="frame" x="322" y="510.5" width="32" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Äpfel"/>
                                 <connections>
@@ -519,9 +538,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cug-Pd-Ypg">
-                                <rect key="frame" x="30" y="184" width="354" height="72"/>
+                                <rect key="frame" x="30" y="184" width="354" height="47"/>
                                 <string key="text">Bitte geben Sie die Mindestbewertung für die Produkte an. Wie sich die Bewertungskriterien zusammensetzen, ist auf dem About-Screen ersichtlich</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -536,7 +555,8 @@
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-s4-dhh">
-                                <rect key="frame" x="60" y="586.5" width="129" height="30"/>
+                                <rect key="frame" x="60" y="548.5" width="114" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Kräuter und Blüten"/>
                                 <connections>
@@ -566,7 +586,6 @@
                             <constraint firstItem="Cug-Pd-Ypg" firstAttribute="leading" secondItem="oTA-Hf-wPc" secondAttribute="leading" constant="30" id="Ihu-AI-eb2"/>
                             <constraint firstItem="728-fh-XZu" firstAttribute="centerX" secondItem="y4V-Mz-5rJ" secondAttribute="centerX" id="Lfh-zc-yrC"/>
                             <constraint firstItem="0Vn-yM-PiT" firstAttribute="leading" secondItem="oTA-Hf-wPc" secondAttribute="leading" constant="60" id="R3b-pS-I8B"/>
-                            <constraint firstItem="oTA-Hf-wPc" firstAttribute="bottom" secondItem="SXs-fj-D85" secondAttribute="bottom" constant="30" id="Ssd-IU-L6D"/>
                             <constraint firstItem="oTA-Hf-wPc" firstAttribute="trailing" secondItem="H0v-JN-a0d" secondAttribute="trailing" constant="30" id="UUT-gD-Deq"/>
                             <constraint firstItem="0Vn-yM-PiT" firstAttribute="top" secondItem="H0v-JN-a0d" secondAttribute="bottom" constant="10" id="WD3-ec-pFA"/>
                             <constraint firstItem="TjS-45-Fqe" firstAttribute="top" secondItem="n6s-eg-EbX" secondAttribute="bottom" constant="10" id="ZJH-SN-i3h"/>
@@ -580,6 +599,7 @@
                             <constraint firstItem="jVE-s4-dhh" firstAttribute="leading" secondItem="oTA-Hf-wPc" secondAttribute="leading" constant="60" id="egS-xF-kcj"/>
                             <constraint firstItem="oTA-Hf-wPc" firstAttribute="trailing" secondItem="MOr-4s-hrh" secondAttribute="trailing" constant="60" id="fdr-GT-2BN"/>
                             <constraint firstItem="TLJ-Jo-Jrd" firstAttribute="centerX" secondItem="y4V-Mz-5rJ" secondAttribute="centerX" id="foA-6W-sgZ"/>
+                            <constraint firstItem="oTA-Hf-wPc" firstAttribute="bottom" secondItem="SXs-fj-D85" secondAttribute="bottom" constant="30" id="hDl-tA-NlZ"/>
                             <constraint firstItem="SXs-fj-D85" firstAttribute="centerX" secondItem="y4V-Mz-5rJ" secondAttribute="centerX" id="i1p-Vp-tmm"/>
                             <constraint firstItem="TLJ-Jo-Jrd" firstAttribute="leading" secondItem="oTA-Hf-wPc" secondAttribute="leading" constant="30" id="jsv-ep-svT"/>
                             <constraint firstItem="n6s-eg-EbX" firstAttribute="leading" secondItem="oTA-Hf-wPc" secondAttribute="leading" constant="30" id="lnN-CY-Aqe"/>
