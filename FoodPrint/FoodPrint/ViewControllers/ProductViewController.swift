@@ -9,7 +9,7 @@ import UIKit
 
 class ProductViewController: UIViewController {
     
-    var product: Product?
+    var product: ProductCD?
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var seasonLabel: UILabel!
@@ -25,12 +25,12 @@ class ProductViewController: UIViewController {
     // TODO; set language in usersettings
     func loadLabels() {
         self.categoryLabel.text = product!.category
-        self.scoreLabel.text = convertRatingToString(rating: product!.rating)
-        self.seasonLabel.text = getMonthsAsString(product!.months)
+        self.scoreLabel.text = convertRatingToString(rating: Int(product!.rating))
+        self.seasonLabel.text = getMonthsAsString(product!.months!)
         self.countryLabel.text = product!.country
         self.productNameLabel.text = product!.name
         let ratingImages = [UIImage(named: "Red"), UIImage(named: "Orange"), UIImage(named: "Yellow"), UIImage(named: "Green")]
-        self.ratingImage.image = ratingImages[product!.rating]
+        self.ratingImage.image = ratingImages[Int(product!.rating)]
     }
     
     func getMonthsAsString(_ months: [Int]) -> String {

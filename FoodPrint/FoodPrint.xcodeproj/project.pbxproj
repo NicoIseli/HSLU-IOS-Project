@@ -24,7 +24,8 @@
 		373A22C82566B5CB00B67366 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A22C72566B5CB00B67366 /* UserSettingsViewController.swift */; };
 		376F7EAB2564260E0044AD33 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F7EAA2564260E0044AD33 /* ProductViewController.swift */; };
 		376F7EAD256426500044AD33 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F7EAC256426500044AD33 /* ProductListViewController.swift */; };
-		376F7EB425644E870044AD33 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F7EB325644E870044AD33 /* Product.swift */; };
+		B60261382573CF7E00049EC6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60261372573CF7E00049EC6 /* CoreData.swift */; };
+		B60261492573D34D00049EC6 /* DTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60261482573D34D00049EC6 /* DTOs.swift */; };
 		B636E87C25691F8600C2AE6C /* NotifyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B636E87B25691F8600C2AE6C /* NotifyDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +70,8 @@
 		373A22C72566B5CB00B67366 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
 		376F7EAA2564260E0044AD33 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		376F7EAC256426500044AD33 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
-		376F7EB325644E870044AD33 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B60261372573CF7E00049EC6 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		B60261482573D34D00049EC6 /* DTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOs.swift; sourceTree = "<group>"; };
 		B636E87B25691F8600C2AE6C /* NotifyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,9 +123,10 @@
 		370731CC254AE06D00240DF7 /* FoodPrint */ = {
 			isa = PBXGroup;
 			children = (
+				B60261472573D32F00049EC6 /* Model */,
+				B60261362573CF6200049EC6 /* Utils */,
 				376F7EBB256459150044AD33 /* ViewControllers */,
 				376F7EBA256459030044AD33 /* Delegates */,
-				376F7EB9256458B70044AD33 /* Models */,
 				376F7EAE25642F410044AD33 /* Fonts */,
 				370731D3254AE06D00240DF7 /* Main.storyboard */,
 				370731D9254AE06E00240DF7 /* Assets.xcassets */,
@@ -163,14 +166,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		376F7EB9256458B70044AD33 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				376F7EB325644E870044AD33 /* Product.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		376F7EBA256459030044AD33 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +186,22 @@
 				373A22C72566B5CB00B67366 /* UserSettingsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B60261362573CF6200049EC6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B60261372573CF7E00049EC6 /* CoreData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B60261472573D32F00049EC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B60261482573D34D00049EC6 /* DTOs.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,10 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				370731D2254AE06D00240DF7 /* ViewController.swift in Sources */,
-				376F7EB425644E870044AD33 /* Product.swift in Sources */,
 				376F7EAB2564260E0044AD33 /* ProductViewController.swift in Sources */,
 				B636E87C25691F8600C2AE6C /* NotifyDelegate.swift in Sources */,
 				373A22C62566B58400B67366 /* AboutViewController.swift in Sources */,
+				B60261492573D34D00049EC6 /* DTOs.swift in Sources */,
+				B60261382573CF7E00049EC6 /* CoreData.swift in Sources */,
 				373A22C82566B5CB00B67366 /* UserSettingsViewController.swift in Sources */,
 				370731CE254AE06D00240DF7 /* AppDelegate.swift in Sources */,
 				370731D0254AE06D00240DF7 /* SceneDelegate.swift in Sources */,

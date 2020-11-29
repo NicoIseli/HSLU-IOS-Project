@@ -10,29 +10,18 @@ import UIKit
 
 class ProductListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, NotifyReloadCoreData {
     
-    
-    
     @IBOutlet weak var aboutButton: UIButton!
     @IBOutlet weak var userSettingsButton: UIButton!
     
-    
-    
     // MARK: - ATTRIBUTES
+    var fetchedProductDTOsFromAPI : [ProductDTO] = []
     
-    // VARIABLE THAT KEEPS PRODUCT-DATA OF DTO FROM API
-    var productsDTO : [ProductDTO] = []
-//    var whatever: string = "Hello"
+    // Products in Core Data
+    var allProducts: [ProductCD] = []
+    var productsFilteredByUserSettings: [ProductCD] = []
+    var productsFilteredBySearchBar: [ProductCD] = []
     
-    // VARIABLE THAT KEEPS THE PRODUCT-DATA
-    var products: [Product] = []
-    
-    // VARIABLE THAT KEEPS THE FILTERED PRODUCT-DATA ACCORDING TO USER-SETTINGS
-    var filteredProducts: [Product] = []
-    
-    // VARIABLE THAT KEEPS FILTERED DATA OF SEARCHBOX
-    var searchBarProducts: [Product] = []
-    
-    // VARIABLE THAT KEEPS USER-SETTINGS
+    // User in Core Data, contains User-Settings which can be changed in UserSettingsViewController
     var user: User?
     
     // CONSTANT THAT KEEPS URL FOR API-CALLS
@@ -40,40 +29,32 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
 
     
     // MARK: - IBOUTLETS
-    
-    // VARIABLE THAT KEEPS REFERENCE TO TABLE VIEW ON STORYBOARD
+    // Searchbar which Filters Products by Name
     @IBOutlet weak var searchBar: UISearchBar!
+    // Tableview of Filtered Products
     @IBOutlet weak var tableView: UITableView!
     
     
     
-    // MARK: - IBACTIONS
-    
-    
-    
-    
-    
     // MARK: - LIFE-CYCLE
-    
-    // FUNCTION WHICH IS CALLED AFTER VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        print(paths[0])
+        print("Printed Filepath bevore")
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
-        self.productsDTO = fetchProducts()
-        createUser()
-        readUser()
-    
         
-        // ADD USER-DATA TO USER-ATTRIBUTE
-        // readUser()
+        self.user = CoreData.getUser()
+        self.fetchedProductDTOsFromAPI = fetchProductsFromApi()
         
-        // CONVERT THE DTO FROM API TO THE STRUCTURE OF PRODUCT-CLASS AND ADD THEM TO PRODUCTS-ATTRIBUTE
-        convertToProductFromDTO()
+        // Because of Rating calculation I Couldn't put this process to CoreData Class!!! Else I have to made logic functions static...
+        convertDTOsToProducts()
         
-        // FILTER THE PRODUCTS-ATTRIBUTE BASED ON USER-SETTINGS AND ADD RESULT TO FILTEREDPRODUCTS-ATTRIBUTE
-        filterProductData()
+        self.allProducts = CoreData.getAllProducts()
+        
+        filterProductsByUserSettings()
         reloadProducts()
     }
    
@@ -83,21 +64,8 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // MARK: - API
     
-    // STRUCT
-    struct ProductDTO: Codable{
-        let category : String
-        let name: String
-        let country: String
-        let seasonalMonths: [Int]
-    }
-    
-    // STRUCT WITH A LIST OF DTO ON API
-    struct ProductListOfDTO: Codable {
-        let decodedProductsDTO: [ProductDTO]
-    }
-    
     // FUNCTION TO GET THE PRODUCT-DATA FROM API
-    func fetchProducts() -> [ProductDTO] {
+    func fetchProductsFromApi() -> [ProductDTO] {
         var fetchedProducts: [ProductDTO]?
         do{
             let encodedData = try Data(contentsOf: self.urlProducts)
@@ -122,14 +90,14 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     // FUNCTION TO DEFINE THE NUMBER OF ROWS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchBarProducts.count
+        return productsFilteredBySearchBar.count
     }
     
     // FUNCTION TO SET THE CONTENT OF EACH CELL
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
-        cell.textLabel?.text = "\(searchBarProducts[indexPath.row].name)"
-        switch searchBarProducts[indexPath.row].rating {
+        cell.textLabel?.text = "\(productsFilteredBySearchBar[indexPath.row].name ?? "")"
+        switch productsFilteredBySearchBar[indexPath.row].rating {
         case 0:
             cell.imageView?.image = ratingIcons[0]
         case 1:
@@ -162,7 +130,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
          
         if segue.identifier == "product", let productViewController = segue.destination as? ProductViewController{
             let indexPath = self.tableView.indexPathForSelectedRow!
-            productViewController.product = searchBarProducts[indexPath.row]
+            productViewController.product = self.productsFilteredBySearchBar[indexPath.row]
          }
         
         if segue.identifier == "user-settings", let userSettingsViewController = segue.destination as? UserSettingsViewController{
@@ -185,12 +153,12 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // FUNCTION TO FILTER FILTERED PRODUCTS BY USER INPUT IN SEARCH BAR
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == "" {
-            searchBarProducts = filteredProducts
+            productsFilteredBySearchBar = productsFilteredByUserSettings
         } else {
-            self.searchBarProducts = []
-            for product in filteredProducts {
-                if product.name.lowercased().contains(searchText.lowercased()) {
-                    searchBarProducts.append(product)
+            self.productsFilteredBySearchBar = []
+            for product in productsFilteredByUserSettings {
+                if product.name!.lowercased().contains(searchText.lowercased()) {
+                    productsFilteredBySearchBar.append(product)
                 }
             }
         }
@@ -198,87 +166,17 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     
-    
-    
-    
-    // MARK: - CORE DATA
-    
-    // CONSTANT TO KEEP MANAGED-OBJECT-CONTEXT OF PERSISTENCE-CONTAINER
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    func createUser() {
-        
-        let user = User(context: self.context)
-        user.country = "Schweiz"
-        user.language = "Deutsch"
-        user.preferences = ["Gemüse"]
-        user.rating = 1
-        
-        do {
-            try self.context.save()
-        } catch {
-            print("User couldnt be created");
-        }
-        print("User was created")
-    }
-    
-    // FUNCTION TO READ USER-SETTINGS
-    func readUser() {
-        var users: [User] = []
-        do{
-            
-            // FILTERING - WATCH DOC FOR MORE
-            // let request = User.fetchRequest() as NSFetchRequest<User>
-            // let predicate = NSPredicate(format: "language CONTAINS %@", "English")
-            // request.predicate = pred
-            // self.user = try context.fetch(request)
-            
-            // SORTING - WATCH DOC FOR MORE
-            // let request = User.fetchRequest() as NSFetchRequest<User>
-            // let sort = NSSortDescriptor(key: "language", ascending: true)
-            // request.sortDescriptor = [sort]
-            // self.user = try context.fetch(request)
-            users = try self.context.fetch(User.fetchRequest())
-            if (users.count > 0){
-                print("Reading User in Product List")
-                print(users.last!)
-                self.user = users.last
-            }
-        } catch {
-           print("User could not be read")
-        }
-    }
-    
-    // FUNCTION TO UPDATE USER-SETTINGS
-    func updateUser(language: String, rating: Int16, preferences: [String]) {
-        self.user?.language = language
-        self.user?.rating = rating
-        self.user?.preferences = preferences
-        
-        do{
-            try self.context.save()
-        } catch {
-            print("User could not be updated")
-        }
-    }
-    
-    
-    
-    
-    
     // MARK: - LOGIC
     
     // FUNCTION TO CONVERT DTO TO TYPE OF CLASS PRODUCT
-    func convertToProductFromDTO() {
-        for productDTO in self.productsDTO{
-            let rating: Int = rateProduct(months: productDTO.seasonalMonths)
-            let name: String = productDTO.name
-            let category: String = productDTO.category
-            let country: String = productDTO.country
-            let months: [Int] = productDTO.seasonalMonths.sorted()
-            
-            self.products.append(Product(rating: rating, name: name, category: category, country: country, months: months))
-            
+    func convertDTOsToProducts() {
+        CoreData.loadProducts()
+        for productDTO in self.fetchedProductDTOsFromAPI{
+            let rating: Int16 = Int16(rateProduct(months: productDTO.seasonalMonths))
+            if (!CoreData.checkIfProductExist(productDto: productDTO, rating: rating)) {
+                print("Saving now an Entity")
+                CoreData.createAndSaveProduct(productDto: productDTO, rating: rating)
+            }
         }
     }
     
@@ -385,27 +283,28 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
     
-    // FUNCTION TO FILTER THE PRODUCT-DATA ACCORDING TO USER-SETTINGS
-    func filterProductData() {
-        var tempFilteredProducts: [Product] = []
-        for product in self.products{
-            if product.rating >= self.user!.rating{
+    
+    func filterProductsByUserSettings() {
+        var tempFilteredProducts: [ProductCD] = []
+        for product in self.allProducts {
+            if product.rating >= self.user!.rating {
                 for userPreference in self.user!.preferences! {
-                    if product.category == userPreference{
+                    if product.category == userPreference {
                         tempFilteredProducts.append(product)
                     }
                 }
             }
         }
-        self.filteredProducts = tempFilteredProducts
-        self.searchBarProducts = tempFilteredProducts
+        let sortedProducts = tempFilteredProducts.sorted(by: { $0.name! < $1.name! })
+        self.productsFilteredByUserSettings = sortedProducts
+        self.productsFilteredBySearchBar = sortedProducts
     }
     
-    // Reload ProductData by new User-Settings
+    // Reload ProductData by new User-Settings made in UserSettingsViewController
     func notifyDelegate() {
         print("Using Delegate function")
-        readUser()
-        filterProductData()
+        self.user = CoreData.getUser()
+        filterProductsByUserSettings()
         reloadProducts()
     }
 }
