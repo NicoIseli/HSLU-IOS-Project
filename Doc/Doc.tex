@@ -9,7 +9,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},
 tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
-
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{hyperref}
 
 
 
@@ -38,35 +41,59 @@ Projekt FoodPrint
 \textbf{Studierende}: Frederico Fischer, Nico Iseli\\
 \textbf{Dozenten}: Prof. Dr. Ruedi Arnold, Nicolas Märki\
 
-\textbf{Abgabedatum}: 14. Dezember 2020 \\ 
+\textbf{Abgabedatum}: 13. Dezember 2020 \\ 
 \end{large}
 \end{center}
 \newpage
 
 
 \section*{Einleitung}
-Das vorliegende Projekt hat zum Ziel, eine App zu entwickeln, die Leute mehr zu unweltfreundlichen Einkäufen ermutigt. Die App soll dabei bedürfnisbasiert regionale und saisonale Produkte vorschlagen. Die Implementierung ist vorerst für User aus der Schweiz vorgesehen aber liesse entsprechend auch auf weitere Länder skalieren.
+Das vorliegende Projekt hat zum Ziel, eine App zu entwickeln, die Leute mehr zu unweltfreundlichen Einkäufen ermutigt. Die App soll dabei bedürfnisbasiert regionale und saisonale Produkte vorschlagen. Die Implementierung ist vorerst für User aus der Schweiz vorgesehen. Das Datenbankschema im Backend ist jedoch so aufgebaut, dass sich das App auch auf weitere Länder skalieren lässt.
 
 \section*{Architektur}
-Die Architektur ist so aufgebaut, dass die Produktdaten über einen Webserver, der vom EnterpriseLab gehostet wird, im JSON-Format zur Verfügung gestellt werden. Diese werden über HTTP-Requests geladen. In der Logik werden die Daten dann userspezifisch gefiltert. Für die Filteurng sind daher die Userdaten nötig. Diese werden mittels Core-Data verwaltet. Im Layer User-Interface werden die ausgewerteten Daten schliesslich visualisiert. Die Architektur ist ebenfalls als Abbildung (vgl. ) festgehalten.
+Die Architektur ist so aufgebaut, dass Produktdaten im JSON-Format über einen Webserver, der durch das EnterpriseLab gehostet wird, zur Verfügung gestellt werden. Die Produktdaten werden über HTTP-Requests geladen und mittels Core-Data persistiert. Beim Laden wird jeweils geprüft, ob es auf dem Server Änderung der Produktdaten gab. Falls nein, werden die Produktdaten im App auch nicht angepasst. Neben den Produktdaten werden auch die User-Einstellungen mittels Core-Data festgehalten. Die User-Daten befinden sich jedoch nur App-Intern. Die User-Daten werden genutzt, um die Produkte user-spezifisch zu filtern. Für das User-Interface setzt das Projektteam auf UI-Kit.Die Architektur ist ebenfalls als Abbildung (vgl. \ref{img: Architektur}) festgehalten.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=16cm]{Img/Architektur.png}
+	\caption[Architektur]{Architektur,\\ Quelle: Projektteam}
+	\label{img: Architektur}
+\end{figure}
 
 \section*{Server-Komponente}
-Für die Server-Komponente wurde ein Webserver im EnterpriseLab der Hochschule Luzern aufgesetzt. Dieser stellt ein JSON-File (URL ANGEBEN?) mit Produktdaten zur Verfügung, die über einen Request geladen werden können. 
+Für die Server-Komponente wurde eine Ressource im EnterpriseLab reserviert. Dort werden die Produktdaten in einer SQL-Datenbank festgehalten und mit Java (beziehungsweise dessen Framework Sprint) verarbeitet. Die Produktdaten werden auf dem Server in ein JSON-Format konvertiert und über den Webserver zur Verfügung gestellt (ersichtlich unter: \url{http://ffischer-ios-h20.el.eee.intern:8080/api/v1/products/Schweiz}). Aktuell läuft der Server nicht in der DMZ. Daher ist ein Aufruf nur mit bestehender VPN-Verbindung möglich.\\
+\\
+\textbf{Code-Referenz: } 
 
 \section*{HTTP-Kommunikation}
-Die JSON-Daten des Webservers (vgl. ) werden über die URL geladen und mittels des JSON-Decoders von Swift in ein Array von Swift-Objekten konvertiert. 
+Die JSON-Daten des Webservers werden über den Aufruf der  URL geladen und mittels des JSON-Decoders von Swift in ein Array von Swift-Objekten konvertiert.\\
+\\
+\textbf{Code-Referenz: } 
 
 \section*{Persistierung mit Core-Data}
-Mittels Core-Data werden die User-Daten lokal persistiert. Das App verwaltet dabei einen User. Dieser kann gelesen (über die Fetch-Methode im NSManagedContext) und persistiert (über die Save-Methode im NSManagedContext) werden. Der persistierte User dient dazu, die eigenen Bedürfnisse zu ändern und die Produktdaten des API-Calls zu filtern.
+Mittels Core-Data werden die User-Daten sowie die Produktdaten lokal persistiert. Die App verwaltet dabei ingesamt einen User und mehrere Produktdaten. Diese können gelesen (über die Fetch-Methode im NSManagedContext) und persistiert (über die Save-Methode im NSManagedContext) werden. Der persistierte User dient dazu, die eigenen Bedürfnisse zu ändern und demzufolge die entsprechenden Produktdaten zu filtern.\\
+\\
+\textbf{Code-Referenz: }
+
 
 \section*{Verwendung von Nebenläufigkeit}
+Nebenläufigkeit kam ausschliesslich beim Holen der Daten über die API zum Einsatz. Falls die Produktdaten aktualisiert werden müssen, werden diese beim Start der App Nebenläufig abgerufen.\\
+\\
+\textbf{Code-Referenz: }
 
 
 \section*{Unit-Tests}
+Text\\
+\\
+\textbf{Code-Referenz: }
 
 \section*{Auto-Layout}
+Text\\
+\\
+\textbf{Code-Referenz: }
 
-\section*{Mehrsprachigkeit}
+\section*{Erkenntnisse}
+Das Erstellen einer eigenen App war eine sehr interessante Erfahrung. Das Wissen über das IOS sowie Swift hat sich im Team sicherlich verbessert.
+
 
 
 
