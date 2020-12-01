@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.29)  1 DEC 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.29)  1 DEC 2020 19:44
 entering extended mode
 **./Doc.tex
 (Doc.tex
@@ -394,9 +394,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--72
  []
 
 
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 69--72
-\OT1/cmtt/m/n/12 IOS _ App _ Project / FoodPrint / FoodPrint / ViewControllers 
-/ ProductListViewController .
+Overfull \hbox (1.70612pt too wide) in paragraph at lines 69--72
+\OT1/cmtt/m/n/12 FoodPrint / FoodPrint / ViewControllers / ProductListViewContr
+oller . swift / (MARK :
  []
 
 
@@ -410,9 +410,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
  []
 
 
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 80--83
-\OT1/cmtt/m/n/12 IOS _ App _ Project / FoodPrint / FoodPrint / ViewControllers 
-/ ProductListViewController .
+Overfull \hbox (1.70612pt too wide) in paragraph at lines 80--83
+\OT1/cmtt/m/n/12 FoodPrint / FoodPrint / ViewControllers / ProductListViewContr
+oller . swift / (MARK :
  []
 
 
@@ -449,7 +449,7 @@ cmbx12.pfb><C:/Users/iseli/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr12.pfb><C:/Users/iseli/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb><C:/Users/iseli/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Doc.pdf (4 pages, 89178 bytes).
+Output written on Doc.pdf (4 pages, 88808 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)

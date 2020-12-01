@@ -68,29 +68,29 @@ Für die Server-Komponente wurde eine Ressource im EnterpriseLab reserviert. Dor
 \section*{HTTP-Kommunikation}
 Die JSON-Daten des Webservers werden über den Aufruf der  URL geladen und mittels des JSON-Decoders von Swift in ein Array von Swift-Objekten konvertiert.\\
 \\
-\textbf{Code-Referenz: }\\ \path{IOS_App_Project/FoodPrint/ FoodPrint/ViewControllers/ProductListViewController.swift/(MARK: - API)}
+\textbf{Code-Referenz: }\\ \path{FoodPrint/ FoodPrint/ViewControllers/ProductListViewController.swift/(MARK: - API)}
 
 \section*{Persistierung mit Core-Data}
 Mittels Core-Data werden die User-Daten sowie die Produktdaten lokal persistiert. Die App verwaltet dabei ingesamt einen User und mehrere Produktdaten. Diese können gelesen (über die Fetch-Methode im NSManagedContext) und persistiert (über die Save-Methode im NSManagedContext) werden. Der persistierte User dient dazu, die eigenen Bedürfnisse zu ändern und demzufolge die entsprechenden Produktdaten zu filtern.\\
 \\
-\textbf{Code-Referenz: }\\ \path{IOS_App_Project / FoodPrint / FoodPrint / Utils / CoreData.swift}
+\textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrint / Utils / CoreData.swift}
 
 
 \section*{Verwendung von Nebenläufigkeit}
 Nebenläufigkeit kam ausschliesslich beim Holen der Daten über die API zum Einsatz. Falls die Produktdaten aktualisiert werden müssen, werden diese beim Start der App Nebenläufig abgerufen.\\
 \\
-\textbf{Code-Referenz: }\\ \path{IOS_App_Project / FoodPrint / FoodPrint / ViewControllers / ProductListViewController.swift / (MARK: - API)}
+\textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrint / ViewControllers / ProductListViewController.swift / (MARK: - API)}
 
 
 \section*{Unit-Tests}
 Text\\
 \\
-\textbf{Code-Referenz: }\\ \path{IOS_App_Project / FoodPrint / FoodPrintTests / FoodPrintTests.swift}
+\textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrintTests / FoodPrintTests.swift}
 
 \section*{Auto-Layout}
 Für das Projekt wurden die verschiedenen Inhalte der einzelnen View-Controller mittels Auto-Layout formatiert. Dafür wurden entsprechende Contraints gesetzt. Die Nutzung dieses Features wurde jedoch zu wenig gut geplant. Dieses wurde ohne grosses Vorwissen genutzt, was dazu führte, dass die Contraints mehrmals gelöscht und wieder neu erstellt werden mussten. Zudem wurden auch zu wenig Geräte getestet. Aktuell sieht die Formatierung auf neueren beziehungsweise grösseren Geräten gut aus. Hingegen auf kleineren Geräten (beispielsweise auf dem I Phone SE) überlappen sich einige Inhalte. Um dies zu beheben, wurde versucht, im Nachhinein noch eine Scroll-View zu integrieren. Diese kam dann jedoch mit den bestehenden Contraints in Konflikt. Daher ist die App aktuell nicht auf alle Geräte ausgelegt.\\
 \\
-\textbf{Code-Referenz: }\\ \path{IOS_App_Project / FoodPrint / FoodPrint / Utils / Main.storyboard}
+\textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrint / Utils / Main.storyboard}
 
 \section*{Erkenntnisse}
 Das Erstellen einer eigenen App war eine sehr interessante Erfahrung. Das Wissen über das IOS sowie Swift hat sich im Team durch das Projekt sicherlich verbessert. Insgesamt wurden einige Fehler gemacht, ohne die man im Nachhinein sicherlich effizienter gewesen wäre. Ein Beispiel dafür ist die Nutzung von Auto-Layout. Ein Problem dabei war es, dass zu schnell damit begonnen wurde. Es mussten immer wieder Constraints gelöscht und neu erstellt werden. Ein anderes Beispiel ist das Datenmanagement. Hier wurden die bisherigen Produktdaten von Hand abgetragen, weil keine passende Referenz gefunden wurde. Kämen neue Produkte dazu, müsste die Datenerhebung überdacht werden. Abgesehen davon ist man aber mit dem Resultat sehr zufrieden und motviert, die App auch im Anschluss an die Projektabgabe weiterzuführen.
