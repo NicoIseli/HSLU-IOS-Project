@@ -271,7 +271,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
                 return 0
             }
         } else {
-            if (currentMonth < startMonth && currentMonth > endMonth)  {
+            if (currentMonth < startMonth-1 && currentMonth > endMonth+1)  {
                 return 0
             } else if (currentMonth == startMonth || currentMonth == endMonth) {
                 return 2
