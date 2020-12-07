@@ -75,15 +75,8 @@ Mittels Core-Data werden die User-Daten sowie die Produktdaten lokal persistiert
 \\
 \textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrint / Utils / CoreData.swift}
 
-
-\section*{Verwendung von Nebenläufigkeit}
-Nebenläufigkeit kam ausschliesslich beim Holen der Daten über die API zum Einsatz. Falls die Produktdaten aktualisiert werden müssen, werden diese beim Start der App Nebenläufig abgerufen.\\
-\\
-\textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrint / ViewControllers / ProductListViewController.swift / (MARK: - API)}
-
-
 \section*{Unit-Tests}
-Text\\
+Unit-Tests kamen besonders bei der Logik zur Anwendung. Damit die Daten richtig gefiltert werden, war es wichtig, verschiedene Fälle zu berücksichtigen. Daher wurde versucht, möglichst alle Ausnahmefälle zu evaluieren und somit verschiednene Tests für die unterschiedlichen Funktionen durchzuführen.\\
 \\
 \textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrintTests / FoodPrintTests.swift}
 
@@ -93,7 +86,7 @@ Für das Projekt wurden die verschiedenen Inhalte der einzelnen View-Controller 
 \textbf{Code-Referenz: }\\ \path{FoodPrint / FoodPrint / Utils / Main.storyboard}
 
 \section*{Erkenntnisse}
-Das Erstellen einer eigenen App war eine sehr interessante Erfahrung. Das Wissen über das IOS sowie Swift hat sich im Team durch das Projekt sicherlich verbessert. Insgesamt wurden einige Fehler gemacht, ohne die man im Nachhinein sicherlich effizienter gewesen wäre. Ein Beispiel dafür ist die Nutzung von Auto-Layout. Ein Problem dabei war es, dass zu schnell damit begonnen wurde. Es mussten immer wieder Constraints gelöscht und neu erstellt werden. Ein anderes Beispiel ist das Datenmanagement. Hier wurden die bisherigen Produktdaten von Hand abgetragen, weil keine passende Referenz gefunden wurde. Kämen neue Produkte dazu, müsste die Datenerhebung überdacht werden. Abgesehen davon ist man aber mit dem Resultat sehr zufrieden und motviert, die App auch im Anschluss an die Projektabgabe weiterzuführen.
+Das Erstellen einer eigenen App war eine sehr interessante Erfahrung. Das Wissen über das IOS sowie Swift hat sich im Team durch das Projekt stark verbessert. Insgesamt wurden einige Fehler gemacht, ohne die man im Nachhinein sicherlich effizienter gewesen wäre. Ein Beispiel dafür ist die Nutzung von Auto-Layout. Ein Problem dabei war es, dass zu schnell damit begonnen wurde. Es mussten immer wieder Constraints gelöscht und neu erstellt werden. Ein anderes Beispiel ist das Datenmanagement. Hier wurden die bisherigen Produktdaten von Hand abgetragen, weil keine passende Referenz gefunden wurde. Kämen neue Produkte dazu, müsste die Datenerhebung überdacht werden. Eine weitere Hürde war das Aufsetzen der Logik. Diese wurde unterschätzt. Beim Filtern der Daten gab es diverse Ausnahmefälle, die betrachtet werden mussten. Abgesehen davon ist man aber mit dem Resultat sehr zufrieden und motviert, die App auch im Anschluss an die Projektabgabe weiterzuführen.
 
 
 
