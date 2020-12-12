@@ -309,7 +309,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
      }
     
     func showAlert(message: String) {
-        let alertController = UIAlertController(title: "Problem beim Herunterladen", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Download fehlgeschlagen", message: message, preferredStyle: .alert)
         let tryAgainAction = UIAlertAction(title: "Nochmal versuchen!", style: .default, handler: {_ in
             self.loadProductData()
         })

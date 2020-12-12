@@ -46,7 +46,6 @@ class CoreData {
         } catch {
            print("User could not be read")
         }
-        
         return createUser()
     }
     
@@ -109,7 +108,6 @@ class CoreData {
         }
         
     }
-
     
     
 }
