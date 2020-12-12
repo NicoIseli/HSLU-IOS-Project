@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.29)  7 DEC 2020 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.29)  12 DEC 2020 13:15
 entering extended mode
 **./Doc.tex
 (Doc.tex
@@ -361,11 +361,19 @@ LaTeX Info: Redefining \nameref on input line 22.
  [1
 
 {C:/Users/iseli/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<Img/Architektur.png, id=13, 657.95813pt x 303.1325pt>
+
+LaTeX Warning: Reference `img: Architektur' on page 2 undefined on input line 5
+5.
+
+
+LaTeX Warning: Reference `img: Architektur' on page 2 undefined on input line 5
+5.
+
+<Img/Architektur.png, id=11, 773.89125pt x 351.56343pt>
 File: Img/Architektur.png Graphic file (type png)
 <use Img/Architektur.png>
 Package pdftex.def Info: Img/Architektur.png  used on input line 58.
-(pdftex.def)             Requested size: 455.24408pt x 209.74445pt.
+(pdftex.def)             Requested size: 455.24408pt x 206.80907pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 55--61
 
@@ -423,12 +431,19 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `Doc.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
  7639 strings out of 480790
  123640 string characters out of 2897301
- 404797 words of memory out of 3000000
+ 404652 words of memory out of 3000000
  23525 multiletter control sequences out of 15000+200000
  537060 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -438,9 +453,9 @@ cmbx12.pfb><C:/Users/iseli/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr12.pfb><C:/Users/iseli/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb><C:/Users/iseli/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Doc.pdf (4 pages, 88960 bytes).
+Output written on Doc.pdf (4 pages, 107510 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
