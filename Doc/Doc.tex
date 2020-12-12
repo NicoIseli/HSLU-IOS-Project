@@ -43,19 +43,31 @@ Projekt FoodPrint
 \textbf{Dozenten}: Prof. Dr. Ruedi Arnold, Nicolas Märki\
 
 \textbf{Abgabedatum}: 13. Dezember 2020 \\ 
+\begin{figure}[ht]
+  \centering
+  \begin{minipage}[t][][b]{0.2\textwidth}
+  \href{https://github.com/NicoIseli/IOS_App_Project}{\includegraphics[width=\textwidth]{Img/iosappqrcode.png}}
+    \caption*{iOS-App}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t][][b]{0.2\textwidth}
+    \href{https://gitlab.enterpriselab.ch/foodprint/foodprint-backend-distribution}{\includegraphics[width=\textwidth]{Img/backendqrcode.png}}
+    \caption*{Webservice}
+  \end{minipage}
+\end{figure}
 \end{large}
 \end{center}
 \newpage
 
 
-\section*{Einleitung}
+\section{Einleitung}
 Das vorliegende Projekt hat zum Ziel, eine App zu entwickeln, um Menschen mehr zu unweltfreundlichen Einkäufen zu ermutigen. Die App soll dabei bedürfnisbasiert regionale und saisonale Produkte vorschlagen. Die Implementierung ist vorerst für Benutzer aus der Schweiz vorgesehen. Das Datenbankschema im Backend ist jedoch so aufgebaut, dass sich die App auch auf weitere Länder erweitern lässt.
 
-\section*{Architektur}
-Die Architektur ist so aufgebaut, dass die benötigten Produktdaten über eine REST-API zur Verfügung gestellt werden. Die Produktdaten werden über HTTP-Requests geladen und auf der App mittels Core-Data persistiert. Beim Laden wird jeweils geprüft, ob es auf dem Server Änderung der Produktdaten gab. Falls das zutrifft, werden die neuen Datensätze in der App hinzugefügt. Neben den Produktdaten werden die User-Einstellungen ebenfalls mittels Core-Data persistiert, wobei man diese nur App-Intern verwaltet. Die User-Daten werden genutzt, um die Produkte userspezifisch zu filtern. Das User-Interface wurde mit dem UI-Kit aufgebaut. Die Architektur ist ebenfalls als Abbildung (vgl. Abbildung \ref{img: Architektur} auf Seite \pageref{img: Architektur}) festgehalten.\\
+\section{Architektur}
+Die Architektur ist so aufgebaut, dass die benötigten Produktdaten über eine REST-API zur Verfügung gestellt werden. Die Produktdaten werden über HTTP-Requests geladen und auf der App mittels Core-Data persistiert wobei die Daten auch gleich abgeglichen werden. Neben den Produktdaten werden die User-Einstellungen ebenfalls mittels Core-Data persistiert, wobei man diese nur App-Intern verwaltet. Die User-Daten werden genutzt, um die Produkte userspezifisch zu filtern. Das User-Interface wurde mit dem UI-Kit aufgebaut. Die Architektur ist ebenfalls als Abbildung (vgl. Abbildung \ref{img: Architektur} auf Seite \pageref{img: Architektur}) festgehalten.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=16cm]{Img/Architektur2.png}
+	\includegraphics[width=15cm]{Img/Architektur2.png}
 	\caption[Architektur]{Architektur,\\ Quelle: Projektteam}
 	\label{img: Architektur}
 \end{figure}
