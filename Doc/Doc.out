@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{Einleitung}{}% 1
+\BOOKMARK [1][-]{section.2}{Architektur}{}% 2
+\BOOKMARK [1][-]{section.3}{Feature-List}{}% 3
+\BOOKMARK [1][-]{section.4}{Umsetzung technischer Anforderungen}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Server-Komponente}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{HTTP-Kommunikation}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Persistierung mit Core-Data}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Unit-Tests}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.5}{Auto-Layout}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Erkenntnisse}{}% 10
