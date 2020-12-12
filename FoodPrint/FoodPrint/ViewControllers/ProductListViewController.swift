@@ -39,26 +39,13 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: - LIFE-CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        print(paths[0])
-        print("Printed Filepath bevore")
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
-        
         self.user = CoreData.getUser()
-        self.fetchedProductDTOsFromAPI = fetchProductsFromApi()
-        
-        // Because of Rating calculation I Couldn't put this process to CoreData Class!!! Else I have to made logic functions static...
-        convertDTOsToProducts()
-        
-        self.allProducts = CoreData.getAllProducts()
-        
-        filterProductsByUserSettings()
-        reloadProducts()
+        loadProductData()
     }
-   
-    
+
     
     
     
@@ -75,6 +62,7 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
             // fetchedProductsDTO = decodedData.decodedProductsDTO
         } catch {
             print("Products could not be fetched from API")
+            fetchedProducts = []
         }
         return fetchedProducts!
     }
@@ -307,4 +295,28 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         filterProductsByUserSettings()
         reloadProducts()
     }
+    
+     func loadProductData() {
+         self.fetchedProductDTOsFromAPI = fetchProductsFromApi()
+         // Because of Rating calculation I Couldn't put this process to CoreData Class!!! Else I have to made logic functions static...
+         convertDTOsToProducts()
+         self.allProducts = CoreData.getAllProducts()
+         filterProductsByUserSettings()
+         reloadProducts()
+        if (self.allProducts.isEmpty) {
+            showAlert(message: "Es gab ein Problem beim Herunterladen der Produktdaten.")
+        }
+     }
+    
+    func showAlert(message: String) {
+        let alertController = UIAlertController(title: "Problem beim Herunterladen", message: message, preferredStyle: .alert)
+        let tryAgainAction = UIAlertAction(title: "Nochmal versuchen!", style: .default, handler: {_ in
+            self.loadProductData()
+        })
+        let ignoreAction = UIAlertAction(title: "Ignorieren", style: .cancel)
+        alertController.addAction(tryAgainAction)
+        alertController.addAction(ignoreAction)
+        self.present(alertController, animated: true)
+    }
 }
+
